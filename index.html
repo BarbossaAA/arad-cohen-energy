@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>כהן מערכות אנרגיה | הצעת מחיר — כוחות הביטחון ערד</title>
-<meta name="description" content="הצעת מחיר להקמת מערכת סולארית — מסלול ייעודי לאנשי הקבע וכוחות הביטחון במתחם המגורים בערד. כהן מערכות אנרגיה, בניהול שחר כהן.">
+<meta name="description" content="הצעת מחיר להקמת מערכת סולארית — מסלול ייעודי לאנשי הקבע וכוחות הביטחון במתחם המגורים בערד. כהן מערכות אנרגיה.">
 <meta name="theme-color" content="#060F22">
 <meta property="og:title" content="כהן מערכות אנרגיה | הצעת מחיר — כוחות הביטחון ערד">
 <meta property="og:description" content="מסלול ייעודי לאנשי הקבע וכוחות הביטחון במתחם המגורים בערד — תכנון, רישוי, התקנה ומסירה בניהול ישיר.">
@@ -122,6 +122,17 @@ main{padding-top:calc(var(--header-h) + env(safe-area-inset-top));min-height:100
   mask-image:radial-gradient(800px 500px at 70% 20%,#000 30%,transparent 75%);
   -webkit-mask-image:radial-gradient(800px 500px at 70% 20%,#000 30%,transparent 75%);
 }
+.hero-media{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-media video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-shade{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(900px 420px at 82% -10%, rgba(240,167,43,.22), transparent 60%),
+    linear-gradient(160deg, rgba(6,15,34,.9) 0%, rgba(10,27,51,.78) 48%, rgba(10,27,51,.6) 100%);
+}
+.cine-bar{position:absolute;left:0;right:0;height:51%;background:#040A18;z-index:6;pointer-events:none}
+.cine-bar.top{top:0}
+.cine-bar.bottom{bottom:0}
 .hero .orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.35;pointer-events:none}
 .hero .orb.o1{width:340px;height:340px;background:var(--gold);top:-120px;inset-inline-start:8%}
 .hero .orb.o2{width:260px;height:260px;background:#2E5AA8;bottom:-90px;inset-inline-end:12%}
@@ -483,11 +494,19 @@ table.yr tr:last-child td{border-bottom:none}
 <!-- ===================== מסך הבית ===================== -->
 <section class="screen active" id="scr-home" data-screen="home">
   <div class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <video id="heroVideo" autoplay muted playsinline loop preload="auto" poster="assets/hero-poster.jpg">
+        <source src="assets/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+    </div>
+    <div class="cine-bar top" id="cineTop" aria-hidden="true"></div>
+    <div class="cine-bar bottom" id="cineBottom" aria-hidden="true"></div>
     <div class="orb o1"></div><div class="orb o2"></div>
     <div class="container">
       <div class="hero-badge" data-anim><span class="dot"></span> מסלול בלעדי לאנשי הקבע וכוחות הביטחון · מתחם המגורים בערד</div>
       <h1 data-anim>הבית שלכם כבר עומד —<br>עכשיו הזמן שהגג <span class="hl">יתחיל להרוויח</span></h1>
-      <p class="lede" data-anim>הזמן הטוב ביותר להקים מערכת סולארית הוא בסמוך לאכלוס: הגג חדש ופנוי, החשמל מסודר — וכל חודש שעובר בלי מערכת הוא הכנסה שלא חוזרת. תכנון, רישוי, התקנה ומסירה, בניהול ישיר של שחר כהן.</p>
+      <p class="lede" data-anim>הזמן הטוב ביותר להקים מערכת סולארית הוא בסמוך לאכלוס: הגג חדש ופנוי, החשמל מסודר — וכל חודש שעובר בלי מערכת הוא הכנסה שלא חוזרת. תכנון, רישוי, התקנה ומסירה — הכול בכתובת אחת.</p>
       <div class="hero-meta" data-anim>
         <span class="meta-chip manager">מנהל הפרויקט: <b id="propManager"></b></span>
         <span class="meta-chip">מס׳ הצעה: <b class="num" id="propNum"></b></span>
@@ -524,7 +543,7 @@ table.yr tr:last-child td{border-bottom:none}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
       <div>
         <h3>אחרי שנים שאתם שומרים על הבית של כולנו — הגיע הזמן שהבית שלכם ישמור עליכם.</h3>
-        <p>כהן מערכות אנרגיה מלווה את אנשי הקבע וכוחות הביטחון במתחם המגורים בערד עם מסלול ייעודי: תמחור קבוצתי, סטנדרט ביצוע ללא פשרות וכתובת אחת לכל הדרך.</p>
+        <p>כהן מערכות אנרגיה מלווה את אנשי הקבע וכוחות הביטחון במתחם המגורים בערד עם מסלול ייעודי: תמחור מותאם, סטנדרט ביצוע ללא פשרות וכתובת אחת לכל הדרך.</p>
       </div>
     </div>
   </div>
@@ -568,7 +587,6 @@ table.yr tr:last-child td{border-bottom:none}
       <span class="kicker">חמישה מסלולים · בחירה אחת נכונה</span>
       <h2>בוחרים את המסלול שמתאים לבית שלכם</h2>
       <p>כל המסלולים כוללים תכנון, רישוי, התקנה, גימור אדריכלי ומסירה מסודרת — ההבדל העיקרי הוא גודל המערכת. לחיצה על מסלול מעדכנת את נתוני התשואה.</p>
-      <span class="group-note">תמחור קבוצתי ייעודי לרוכשי המתחם בערד — אינו זמין ללקוח פרטי מחוץ לקבוצה</span>
     </div>
     <div class="plans" id="plans"></div>
     <div class="picked-note" id="planPicked" aria-live="polite"></div>
@@ -657,19 +675,19 @@ table.yr tr:last-child td{border-bottom:none}
     <div class="spec-panel" id="p2">
       <div class="spec-box" data-anim>
         <div>
-          <h3>ממיר SolarEdge Hybrid — טכנולוגיה ישראלית מהמובילות בעולם</h3>
-          <p>הלב של המערכת: ממיר היברידי חכם שממקסם את התפוקה של כל פאנל בנפרד, מוכן לחיבור סוללת אגירה בעתיד, ומגובה בתמיכה מקומית מלאה של היצרן.</p>
+          <h3>ממיר SolarEdge — טכנולוגיה ישראלית מהמובילות בעולם</h3>
+          <p>הלב של המערכת: ממיר חכם שממקסם את התפוקה של כל פאנל בנפרד, ומגובה בתמיכה מקומית מלאה של היצרן.</p>
           <ul class="spec-list">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>אופטימיזציה ברמת הפאנל הבודד — הצללה על פאנל אחד לא מפילה את השורה</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>Hybrid-Ready — מוכן לשילוב אגירה ללא החלפת ממיר</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>במסלול פרימיום פלוס: ממיר היברידי מוכן לחיבור אגירה — ללא החלפת ממיר בעתיד</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>כיבוי בטיחותי אוטומטי ברמת הפאנל (SafeDC)</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>אחריות יצרן ל־12 שנה, עם אפשרות הרחבה עד 25 שנה</span></li>
           </ul>
         </div>
         <div class="spec-visual">
-          <div class="big">Hybrid</div>
-          <div class="cap">ממיר SolarEdge</div>
-          <div class="tier-strip"><span class="tier-chip">SAFE-DC</span><span class="tier-chip">HYBRID READY</span><span class="tier-chip">ISRAELI TECH</span></div>
+          <div class="big">SolarEdge</div>
+          <div class="cap">ממיר חכם · בפרימיום פלוס — היברידי מוכן לאגירה</div>
+          <div class="tier-strip"><span class="tier-chip">SAFE-DC</span><span class="tier-chip">ISRAELI TECH</span></div>
         </div>
       </div>
     </div>
@@ -818,11 +836,11 @@ table.yr tr:last-child td{border-bottom:none}
 
     <div class="closing" data-anim>
       <h3>מוכנים להתקדם?</h3>
-      <p>שלחו הודעה או התקשרו לשחר — ונתאם בדיקת התאמה ראשונית ללא עלות וללא התחייבות.</p>
+      <p>שלחו הודעה או התקשרו — ונתאם בדיקת התאמה ראשונית ללא עלות וללא התחייבות.</p>
       <div class="actions">
         <a class="btn btn-wa" id="waFinal" href="#" target="_blank" rel="noopener">
           <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.9 9.88m8.42-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.33-1.66a11.9 11.9 0 0 0 5.66 1.44h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.48-8.4"/></svg>
-          וואטסאפ לשחר
+          דברו איתנו בוואטסאפ
         </a>
         <a class="btn btn-ghost" id="phoneFinal" href="#">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -833,7 +851,7 @@ table.yr tr:last-child td{border-bottom:none}
     </div>
 
     <p class="mini-foot">
-      כהן מערכות אנרגיה · שחר כהן — מנהל הפרויקט · <span class="num" id="footPhone"></span><br>
+      כהן מערכות אנרגיה · <span class="num" id="footPhone"></span><br>
       הנתונים הכלכליים הם צפי מקצועי ואינם הבטחה חוזית · התעריף נקבע על ידי רשות החשמל במועד אישור P.V · ט.ל.ח
     </p>
   </div>
@@ -871,7 +889,7 @@ const DATA = {
   degradationPct: 0.5,
   vatPct: 18,
   years: 25,
-  waMessage: "שלום שחר, קיבלתי את הצעת המחיר של כהן מערכות אנרגיה למסלול כוחות הביטחון בערד, ואשמח לתאם בדיקת התאמה ללא עלות.",
+  waMessage: "שלום, קיבלתי את הצעת המחיר של כהן מערכות אנרגיה למסלול כוחות הביטחון בערד, ואשמח לתאם בדיקת התאמה ללא עלות.",
   plans: [
     {
       id: "p15",
@@ -881,7 +899,7 @@ const DATA = {
       sub: "מערכת של כ־15kWp — 23 פאנלים",
       size: "כ־15kWp",
       panels: "23 פאנלים · 665W",
-      inverter: "ממיר SolarEdge Hybrid",
+      inverter: "ממיר SolarEdge",
       price: 58410,
       year1: 11016,
       kwh1: 22950,
@@ -890,9 +908,8 @@ const DATA = {
       features: [
         { t: "תכנון, רישוי, התקנה ומסירה — מקצה לקצה", ok: true },
         { t: "גימור אדריכלי, עיצוב ומסתור לקיר ממירים", ok: true },
-        { t: "ממיר היברידי מוכן לאגירה", ok: true },
         { t: "אופציה: חברת ניטור ואחזקה במחיר מוזל", ok: true },
-        { t: "הכנת תשתית מלאה לאגירה", ok: false }
+        { t: "ממיר היברידי מוכן לאגירה + תשתית מלאה", ok: false }
       ]
     },
     {
@@ -903,7 +920,7 @@ const DATA = {
       sub: "מערכת של כ־18kWp — 27 פאנלים",
       size: "כ־18kWp",
       panels: "27 פאנלים · 665W",
-      inverter: "ממיר SolarEdge Hybrid",
+      inverter: "ממיר SolarEdge",
       price: 65844,
       year1: 13219,
       kwh1: 27540,
@@ -912,9 +929,8 @@ const DATA = {
       features: [
         { t: "תכנון, רישוי, התקנה ומסירה — מקצה לקצה", ok: true },
         { t: "גימור אדריכלי, עיצוב ומסתור לקיר ממירים", ok: true },
-        { t: "ממיר היברידי מוכן לאגירה", ok: true },
         { t: "אופציה: חברת ניטור ואחזקה במחיר מוזל", ok: true },
-        { t: "הכנת תשתית מלאה לאגירה", ok: false }
+        { t: "ממיר היברידי מוכן לאגירה + תשתית מלאה", ok: false }
       ]
     },
     {
@@ -925,7 +941,7 @@ const DATA = {
       sub: "מערכת של כ־20kWp — 30 פאנלים",
       size: "כ־20kWp",
       panels: "30 פאנלים · 665W",
-      inverter: "ממיר SolarEdge Hybrid",
+      inverter: "ממיר SolarEdge",
       price: 66900,
       year1: 14688,
       kwh1: 30600,
@@ -934,9 +950,8 @@ const DATA = {
       features: [
         { t: "תכנון, רישוי, התקנה ומסירה — מקצה לקצה", ok: true },
         { t: "גימור אדריכלי, עיצוב ומסתור לקיר ממירים", ok: true },
-        { t: "ממיר היברידי מוכן לאגירה", ok: true },
         { t: "אופציה: חברת ניטור ואחזקה במחיר מוזל", ok: true },
-        { t: "הכנת תשתית מלאה לאגירה", ok: false }
+        { t: "ממיר היברידי מוכן לאגירה + תשתית מלאה", ok: false }
       ]
     },
     {
@@ -947,7 +962,7 @@ const DATA = {
       sub: "22.61kWp — ניצול מלא של הגג, 34 פאנלים",
       size: "22.61kWp",
       panels: "34 פאנלים · 665W",
-      inverter: "ממיר SolarEdge Hybrid",
+      inverter: "ממיר SolarEdge",
       price: 68900,
       year1: 16608,
       kwh1: 34600,
@@ -956,9 +971,9 @@ const DATA = {
       features: [
         { t: "תכנון, רישוי, התקנה ומסירה — מקצה לקצה", ok: true },
         { t: "גימור אדריכלי, עיצוב ומסתור לקיר ממירים", ok: true },
-        { t: "ממיר היברידי מוכן לאגירה", ok: true },
+        { t: "ניצול מלא של שטח הגג (34 פאנלים)", ok: true },
         { t: "אופציה: חברת ניטור ואחזקה במחיר מוזל", ok: true },
-        { t: "ניצול מלא של שטח הגג (34 פאנלים)", ok: true }
+        { t: "ממיר היברידי מוכן לאגירה + תשתית מלאה", ok: false }
       ]
     },
     {
@@ -978,8 +993,8 @@ const DATA = {
       features: [
         { t: "תכנון, רישוי, התקנה ומסירה — מקצה לקצה", ok: true },
         { t: "גימור אדריכלי, עיצוב ומסתור לקיר ממירים", ok: true },
+        { t: "ממיר היברידי מוכן לאגירה", ok: true },
         { t: "הכנת תשתית מלאה לאגירה: שרוולים ולוח מוכן", ok: true },
-        { t: "אופציה: חברת ניטור ואחזקה במחיר מוזל", ok: true },
         { t: "ניצול מלא של שטח הגג (34 פאנלים)", ok: true }
       ]
     }
@@ -991,15 +1006,15 @@ const DATA = {
     { q: "האם יש מס על ההכנסה מהמערכת?", a: "נכון להיום, הכנסה ממכירת חשמל סולארי ביתי פטורה ממס הכנסה עד התקרה השנתית הקבועה בחוק — ורוב המערכות הביתיות נמצאות מתחת לתקרה. לפרטים מדויקים מומלץ להתייעץ עם רואה חשבון." },
     { q: "האם ההתקנה עלולה לפגוע בגג או באיטום?", a: "לא. הקונסטרוקציה מתוכננת בהתאם לסוג הגג ולמפרט הבנייה, בעיגון תקני ששומר על שלמות האיטום. על עבודות ההתקנה אתם מקבלים אחריות ל־15 שנה." },
     { q: "מה קורה אם נמכור את הבית?", a: "המערכת עוברת לרוכש יחד עם ההכנסות שלה — נכס מניב מחובר לבית שמגדיל את ערכו ואת האטרקטיביות שלו בשוק. אנחנו מלווים את העברת הרישום ללא עלות." },
-    { q: "האם אפשר להוסיף סוללת אגירה בהמשך?", a: "כן. הממיר ההיברידי שאנחנו מתקינים מוכן לחיבור אגירה גם בעתיד. במסלול פרימיום פלוס מוכנה כבר כל התשתית — כך שהוספת סוללה בעתיד היא עניין של שעות, לא של שיפוץ." },
-    { q: "למה לסגור דרך המסלול הייעודי ולא לבד מול השוק?", a: "המסלול מרכז עבורכם תמחור קבוצתי ייעודי לכוחות הביטחון והטבות שאינן זמינות ללקוח בודד — לצד ביצוע של צוותי החברה בלבד, ללא קבלני משנה, וכתובת אחת לכל הדרך: שחר כהן." }
+    { q: "האם אפשר להוסיף סוללת אגירה בהמשך?", a: "במסלול פרימיום פלוס — בקלות: מותקן ממיר היברידי מוכן לחיבור אגירה, וכל התשתית מוכנה מראש, כך שהוספת סוללה בעתיד היא עניין של שעות, לא של שיפוץ. בשאר המסלולים ניתן לשדרג לאגירה בהמשך, בתיאום איתנו." },
+    { q: "למה לסגור דרך המסלול הייעודי ולא לבד מול השוק?", a: "המסלול מרכז עבורכם תמחור ייעודי לכוחות הביטחון והטבות ייחודיות — לצד ביצוע של צוותי החברה בלבד, ללא קבלני משנה, וכתובת אחת לכל הדרך." }
   ],
   process: [
-    { name: "קדם־פרויקט ובדיקת התאמה", who: "שחר כהן · ללא עלות", items: ["סקירה מקצועית בבית ובגג", "צילום ותיעוד המבנה, ארונות החשמל ותוואי המערכת", "התאמת גודל המערכת לגג ולחיבור", "הגשת הצעת מחיר מסודרת והסכם התקשרות שקוף"] },
+    { name: "קדם־פרויקט ובדיקת התאמה", who: "בדיקת התאמה · ללא עלות", items: ["סקירה מקצועית בבית ובגג", "צילום ותיעוד המבנה, ארונות החשמל ותוואי המערכת", "התאמת גודל המערכת לגג ולחיבור", "הגשת הצעת מחיר מסודרת והסכם התקשרות שקוף"] },
     { name: "רישום, תכנון הנדסי ואסדרה", who: "מול חברת החשמל", items: ["רישום הפרויקט בחברת החשמל", "תכנון מלא על ידי מהנדס חשמל מוסמך", "הכנת תכנית פריסת פאנלים ותכניות חיבור למבנה", "הדמיית פריסת הפאנלים על הגג — לאישורכם עוד לפני הביצוע", "הגשת התכניות וליווי עד קבלת אישור P.V"] },
     { name: "היערכות לביצוע", who: "ניהול הפרויקט", items: ["סיור טכני וסקירת ממצאים", "תיאום מועד התקנה מולכם — בשעות שנוחות לכם", "הזמנת הציוד מיבואנים מקומיים מורשים", "תדרוך צוות ההתקנה על מפרט הפרויקט"] },
     { name: "התקנת המערכת", who: "צוותי החברה בלבד", items: ["הקמת קונסטרוקציה תקנית מותאמת לגג", "התקנת הפאנלים, הממיר ומערך החיווט", "גימור אדריכלי ומסתור לקיר הממירים", "חיבור המערכת ללוח החשמל ובדיקות תקינות מלאות", "עבודה נקייה ומסודרת — הגג נמסר כפי שקיבלנו אותו"] },
-    { name: "מסירת אתר", who: "שחר כהן מול הלקוח", items: ["מעבר משותף על צ׳ק־ליסט מסירת אתר", "הכנת המערכת לקראת חיבור מונה", "הגשת כל המסמכים הנדרשים לזימון חיבור המונה"] },
+    { name: "מסירת אתר", who: "מנהל הפרויקט מול הלקוח", items: ["מעבר משותף על צ׳ק־ליסט מסירת אתר", "הכנת המערכת לקראת חיבור מונה", "הגשת כל המסמכים הנדרשים לזימון חיבור המונה"] },
     { name: "חיבור מונה והפעלה", who: "חברת החשמל · בליווי מלא שלנו", items: ["קבלת מועד וחיבור המונה על ידי חברת החשמל", "הפעלת המערכת", "מסירת תיק פרויקט מלא והדרכה אישית", "ערוץ קשר ישיר לכל שאלה עתידית"] }
   ]
 };
@@ -1230,7 +1245,7 @@ function renderCompare(){
       <tr><td>צפי מצטבר ל־25 שנים</td>${cell(r=>`<span class="num">${money(r.s[r.s.length-1].cum)}</span>`)}</tr>
       <tr><td>החזר השקעה מוערך</td>${cell(r=>`<span class="num">${roiFor(r.p,r.s).toFixed(1)}</span> שנים`)}</tr>
       <tr><td>גימור אדריכלי ומסתור ממירים</td>${cell(()=>"✓ כלול")}</tr>
-      <tr><td>הכנת תשתית מלאה לאגירה</td>${cell(r=>r.p.storageReady?"✓ כלולה":"—")}</tr>
+      <tr><td>מוכנות לאגירה — ממיר היברידי + תשתית</td>${cell(r=>r.p.storageReady?"✓ כלולה":"—")}</tr>
       <tr><td>מחיר כולל מע״מ</td>${cell(r=>`<b class="num">${money(r.p.price)}</b>`)}</tr>
     </tbody>`;
   const base = ps[0], rc = ps.find(x=>x.recommended);
@@ -1417,6 +1432,22 @@ renderPlans();
 renderPlanSwitch();
 renderCompare();
 renderFinance();
+/* וידאו פתיחה קולנועי: הסרט מתנגן ופסי הקולנוע נפתחים כמו מסך — פעם אחת, בטעינה */
+(function initCinema(){
+  const vid = document.getElementById("heroVideo");
+  const bars = [document.getElementById("cineTop"), document.getElementById("cineBottom")];
+  // אם קובץ הווידאו חסר או נכשל — מסתירים את שכבת המדיה ונשארים עם רקע הגרדיאנט
+  vid.addEventListener("error", () => { vid.closest(".hero-media").style.display = "none"; }, true);
+  vid.querySelector("source").addEventListener("error", () => { vid.closest(".hero-media").style.display = "none"; });
+  const startHome = (location.hash || "#home").slice(1) === "home" || !SCREENS.some(s => s.id === (location.hash || "").slice(1));
+  if(reduced || !window.gsap || !startHome){
+    bars.forEach(b => b.style.display = "none");
+    return;
+  }
+  gsap.to(bars[0], {yPercent:-101, duration:1.4, ease:"power3.inOut", delay:.3, onComplete:() => bars[0].style.display = "none"});
+  gsap.to(bars[1], {yPercent:101, duration:1.4, ease:"power3.inOut", delay:.3, onComplete:() => bars[1].style.display = "none"});
+})();
+
 const startId = (location.hash || "#home").slice(1);
 if(startId !== "home" && SCREENS.some(s=>s.id===startId)){
   goTo(startId, false);
