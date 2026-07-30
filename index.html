@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>כהן מערכות אנרגיה | הצעת מחיר — כוחות הביטחון ערד</title>
+<meta name="description" content="הצעת מחיר להקמת מערכת סולארית — מסלול ייעודי לאנשי הקבע וכוחות הביטחון במתחם המגורים בערד. כהן מערכות אנרגיה, בניהול שחר כהן.">
+<meta name="theme-color" content="#060F22">
+<meta property="og:title" content="כהן מערכות אנרגיה | הצעת מחיר — כוחות הביטחון ערד">
+<meta property="og:description" content="מסלול ייעודי לאנשי הקבע וכוחות הביטחון במתחם המגורים בערד — תכנון, רישוי, התקנה ומסירה בניהול ישיר.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><circle cx="24" cy="24" r="11" fill="%23F0A72B"/><g stroke="%23F0A72B" stroke-width="3.4" stroke-linecap="round"><line x1="24" y1="3" x2="24" y2="10"/><line x1="24" y1="38" x2="24" y2="45"/><line x1="3" y1="24" x2="10" y2="24"/><line x1="38" y1="24" x2="45" y2="24"/><line x1="9" y1="9" x2="14" y2="14"/><line x1="34" y1="34" x2="39" y2="39"/><line x1="9" y1="39" x2="14" y2="34"/><line x1="34" y1="14" x2="39" y2="9"/></g><path d="M21 19h8l-4.5 9h-4.5l3.4-6.7H21z" fill="%230A1B33"/></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<noscript><style>[data-anim]{opacity:1}</style></noscript>
+<style>
+/* ===================== בסיס ===================== */
+:root{
+  --navy-950:#060F22;
+  --navy-900:#0A1B33;
+  --navy-800:#102A4E;
+  --navy-700:#17355F;
+  --ink:#152238;
+  --muted:#5B6B84;
+  --soft:#8A97AC;
+  --gold:#F0A72B;
+  --gold-deep:#D98E0B;
+  --sun:#FFC94D;
+  --bg:#F6F8FB;
+  --card:#FFFFFF;
+  --line:#E4EAF2;
+  --green:#1E9E62;
+  --green-bg:#E9F7F0;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(10,27,51,.08);
+  --shadow-lg:0 24px 60px rgba(10,27,51,.14);
+  --appbar-h:66px;
+  --header-h:60px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:'Heebo','Assistant','Segoe UI',Arial,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-tap-highlight-color:transparent;
+}
+img,svg{max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+.num,[dir="ltr"]{direction:ltr;unicode-bidi:isolate}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.8rem;font-weight:700;letter-spacing:.05em;
+  color:var(--gold-deep);background:#FDF3E0;border:1px solid #F5DFB3;
+  padding:5px 14px;border-radius:100px;margin-bottom:12px;
+}
+h2{font-size:clamp(1.45rem,3vw,2.05rem);font-weight:800;line-height:1.25;margin-bottom:10px}
+.screen-head{max-width:720px;margin:0 auto 30px;text-align:center}
+.screen-head p{color:var(--muted);font-size:1rem}
+
+/* ===================== כותרת עליונה ===================== */
+header{
+  position:fixed;top:0;right:0;left:0;z-index:150;
+  height:calc(var(--header-h) + env(safe-area-inset-top));
+  padding-top:env(safe-area-inset-top);
+  background:rgba(7,15,34,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 18px;max-width:1180px;margin:0 auto;height:100%}
+.brand{display:flex;align-items:center;gap:10px;color:#fff}
+.brand-mark{width:38px;height:38px;flex:0 0 auto}
+.brand-name{font-weight:800;font-size:1rem;line-height:1.15}
+.brand-sub{font-size:.68rem;color:#9FB2CC;font-weight:500;letter-spacing:.04em}
+nav.desktop-tabs{display:flex;gap:2px}
+nav.desktop-tabs button{
+  background:none;border:none;color:#C7D3E4;font-size:.9rem;font-weight:600;
+  padding:8px 14px;border-radius:10px;cursor:pointer;transition:.2s;
+}
+nav.desktop-tabs button:hover{color:#fff;background:rgba(255,255,255,.08)}
+nav.desktop-tabs button.active{color:#fff;background:rgba(240,167,43,.18);box-shadow:inset 0 0 0 1px rgba(240,167,43,.4)}
+.header-cta{display:flex;align-items:center;gap:8px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-weight:700;font-size:.96rem;
+  border:none;border-radius:14px;cursor:pointer;transition:.22s;
+  padding:13px 22px;line-height:1.2;
+}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#231603;box-shadow:0 8px 22px rgba(240,167,43,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(240,167,43,.45)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.22)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-wa{background:#22B75B;color:#fff;box-shadow:0 8px 22px rgba(34,183,91,.32)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(34,183,91,.42)}
+.btn-sm{padding:9px 15px;font-size:.85rem;border-radius:11px}
+
+/* ===================== מסכים (אפליקציה) ===================== */
+main{padding-top:calc(var(--header-h) + env(safe-area-inset-top));min-height:100vh}
+.screen{display:none;padding:34px 0 60px}
+.screen.active{display:block}
+@media(max-width:820px){.screen{padding:24px 0 calc(var(--appbar-h) + env(safe-area-inset-bottom) + 90px)}}
+
+/* ===================== מסך הבית / HERO ===================== */
+#scr-home{padding-top:0}
+.hero{
+  position:relative;color:#fff;padding:56px 0 108px;overflow:hidden;
+  background:
+    radial-gradient(1100px 520px at 82% -10%, rgba(240,167,43,.28), transparent 60%),
+    radial-gradient(900px 500px at 8% 110%, rgba(23,53,95,.9), transparent 65%),
+    linear-gradient(160deg,var(--navy-950) 0%,var(--navy-900) 55%,var(--navy-800) 100%);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:radial-gradient(800px 500px at 70% 20%,#000 30%,transparent 75%);
+  -webkit-mask-image:radial-gradient(800px 500px at 70% 20%,#000 30%,transparent 75%);
+}
+.hero .orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.35;pointer-events:none}
+.hero .orb.o1{width:340px;height:340px;background:var(--gold);top:-120px;inset-inline-start:8%}
+.hero .orb.o2{width:260px;height:260px;background:#2E5AA8;bottom:-90px;inset-inline-end:12%}
+.hero .container{position:relative;z-index:2}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:9px;
+  background:rgba(240,167,43,.14);border:1px solid rgba(240,167,43,.45);
+  color:var(--sun);font-weight:700;font-size:.82rem;
+  padding:7px 15px;border-radius:100px;margin-bottom:18px;
+}
+.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 4px rgba(255,201,77,.22);animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(255,201,77,.22)}50%{box-shadow:0 0 0 8px rgba(255,201,77,.08)}}
+.hero h1{font-size:clamp(1.75rem,4.4vw,3rem);font-weight:900;line-height:1.22;max-width:760px;margin-bottom:16px}
+.hero h1 .hl{color:var(--sun)}
+.hero .lede{font-size:clamp(1rem,1.7vw,1.16rem);color:#C9D6E9;max-width:640px;margin-bottom:20px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 26px}
+.meta-chip{
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);
+  border-radius:12px;padding:8px 14px;font-size:.84rem;color:#D9E3F2;
+}
+.meta-chip b{color:#fff;font-weight:700}
+.meta-chip.validity{border-color:rgba(240,167,43,.5);background:rgba(240,167,43,.1);color:var(--sun)}
+.meta-chip.manager{border-color:rgba(255,255,255,.3)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero-trust{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px;color:#AEBFD8;font-size:.86rem}
+.hero-trust span{display:inline-flex;align-items:center;gap:7px}
+.hero-trust svg{width:16px;height:16px;color:var(--sun)}
+
+/* פס מספרים */
+.stats-wrap{margin-top:-60px;position:relative;z-index:5}
+.stats{
+  background:var(--card);border-radius:22px;box-shadow:var(--shadow-lg);
+  display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;border:1px solid var(--line);
+}
+.stat{padding:24px 16px;text-align:center;border-inline-start:1px solid var(--line)}
+.stat:first-child{border-inline-start:none}
+.stat .val{font-size:clamp(1.35rem,2.4vw,1.9rem);font-weight:900;color:var(--navy-900);letter-spacing:-.01em}
+.stat .val em{font-style:normal;color:var(--gold-deep)}
+.stat .lbl{font-size:.82rem;color:var(--muted);margin-top:3px;font-weight:500}
+.stats-note{text-align:center;color:var(--soft);font-size:.78rem;margin-top:10px}
+
+/* פס כבוד */
+.honor{padding:40px 0 0}
+.honor-in{
+  display:flex;gap:18px;align-items:flex-start;max-width:860px;margin:0 auto;
+  background:linear-gradient(135deg,#FFFDF7,#FDF4E1);border:1px solid #F3E1BC;
+  border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow);
+}
+.honor-in svg{width:40px;height:40px;flex:0 0 auto;color:var(--gold-deep)}
+.honor-in h3{font-size:1.12rem;font-weight:800;margin-bottom:5px}
+.honor-in p{color:#6B5A34;font-size:.95rem}
+
+/* למה עכשיו */
+.why{padding:48px 0 0}
+.grid{display:grid;gap:18px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 22px;box-shadow:var(--shadow);transition:.25s;
+}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#D8E2EF}
+.card .ico{
+  width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#FDF3E0,#FBE6C0);color:var(--gold-deep);margin-bottom:14px;
+}
+.card .ico svg{width:23px;height:23px}
+.card h3{font-size:1.02rem;font-weight:800;margin-bottom:7px}
+.card p{color:var(--muted);font-size:.92rem}
+.loss-note{
+  margin:28px auto 0;max-width:760px;text-align:center;
+  background:var(--navy-900);color:#DCE6F4;border-radius:var(--radius);
+  padding:20px 26px;font-size:1rem;box-shadow:var(--shadow-lg);
+}
+.loss-note b{color:var(--sun)}
+.home-next{display:flex;justify-content:center;margin-top:34px}
+
+/* ===================== מסלולים ===================== */
+.group-note{margin-top:12px;display:inline-flex;align-items:center;gap:8px;background:#FDF3E0;border:1px solid #F5DFB3;color:#7A5A16;font-size:.85rem;font-weight:600;padding:8px 15px;border-radius:100px}
+.plans{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;align-items:stretch}
+.plan{
+  position:relative;background:var(--card);border:2px solid var(--line);border-radius:20px;
+  padding:26px 18px 20px;cursor:pointer;transition:.25s;display:flex;flex-direction:column;
+}
+.plan:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.plan.selected{border-color:var(--gold);box-shadow:0 18px 48px rgba(240,167,43,.22)}
+.plan .flag{
+  position:absolute;top:-13px;inset-inline-start:18px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#231603;
+  font-size:.74rem;font-weight:800;padding:4px 12px;border-radius:100px;box-shadow:0 6px 16px rgba(240,167,43,.4);white-space:nowrap;
+}
+.plan .flag.alt{background:var(--navy-800);color:#fff;box-shadow:none}
+.plan h3{font-size:1.3rem;font-weight:900}
+.plan h3 small{font-size:.8rem;color:var(--muted);font-weight:600}
+.plan .sub{color:var(--muted);font-size:.82rem;margin:2px 0 12px;min-height:2.6em}
+.plan .price{font-size:1.5rem;font-weight:900;color:var(--navy-900);letter-spacing:-.01em}
+.plan .price small{font-size:.76rem;color:var(--muted);font-weight:500;display:block}
+.plan .roi-chip{
+  display:inline-flex;gap:5px;align-items:center;margin:8px 0 12px;
+  background:var(--green-bg);color:var(--green);font-weight:700;font-size:.78rem;
+  padding:4px 10px;border-radius:100px;width:fit-content;
+}
+.plan ul{list-style:none;display:flex;flex-direction:column;gap:7px;margin-bottom:16px;flex:1}
+.plan li{display:flex;gap:7px;align-items:flex-start;font-size:.83rem;color:#33465F;line-height:1.45}
+.plan li svg{width:15px;height:15px;flex:0 0 auto;margin-top:3px;color:var(--green)}
+.plan li.minus svg{color:#C4CEDC}
+.plan li.minus{color:#93A2B8}
+.plan .pick{
+  width:100%;text-align:center;border-radius:12px;padding:10px;font-weight:800;font-size:.88rem;
+  border:1.5px solid var(--line);background:#F8FAFD;color:var(--navy-900);cursor:pointer;transition:.2s;
+}
+.plan.selected .pick{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#231603;border-color:transparent}
+.picked-note{text-align:center;margin-top:14px;color:var(--green);font-weight:700;font-size:.9rem;min-height:1.5em;opacity:0;transition:opacity .4s}
+.picked-note.show{opacity:1}
+.compare-note{text-align:center;margin-top:18px;color:var(--muted);font-size:.9rem}
+.hscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.compare{margin-top:18px;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);background:#fff}
+table.cmp{width:100%;border-collapse:collapse;min-width:760px;font-size:.88rem}
+table.cmp th,table.cmp td{padding:11px 12px;text-align:center;border-bottom:1px solid var(--line)}
+table.cmp thead th{background:var(--navy-900);color:#fff;font-weight:700}
+table.cmp thead th:first-child{text-align:right}
+table.cmp td:first-child{text-align:right;font-weight:600;color:#33465F;background:#F8FAFD;white-space:nowrap}
+table.cmp tr:last-child td{border-bottom:none}
+table.cmp .star{color:var(--gold-deep);font-weight:800}
+
+/* ===================== תשואה ===================== */
+#scr-finance .wrap{
+  background:var(--navy-950);border-radius:26px;color:#fff;padding:36px 26px;
+}
+#scr-finance .screen-head p{color:#9FB2CC}
+#scr-finance .kicker{background:rgba(240,167,43,.12);border-color:rgba(240,167,43,.4);color:var(--sun)}
+.fin-grid{display:grid;grid-template-columns:320px 1fr;gap:22px;align-items:stretch}
+.fin-side{display:flex;flex-direction:column;gap:14px}
+.fin-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:18px 20px}
+.fin-card .t{font-size:.82rem;color:#9FB2CC;margin-bottom:3px}
+.fin-card .v{font-size:1.55rem;font-weight:900;letter-spacing:-.01em}
+.fin-card .v.gold{color:var(--sun)}
+.fin-card .v.green{color:#4ED98F}
+.fin-card .s{font-size:.76rem;color:#7E92AF;margin-top:3px}
+.chart-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:20px;position:relative}
+.chart-card h3{font-size:.98rem;font-weight:700;margin-bottom:3px}
+.chart-card .sel-name{color:var(--sun);font-weight:800}
+.chart-card .hint{font-size:.78rem;color:#7E92AF;margin-bottom:12px}
+#chart{width:100%;height:auto;display:block;direction:ltr}
+.chart-tip{
+  position:absolute;pointer-events:none;background:#fff;color:var(--ink);
+  border-radius:10px;padding:8px 12px;font-size:.8rem;font-weight:600;box-shadow:var(--shadow-lg);
+  transform:translate(-50%,-115%);opacity:0;transition:opacity .15s;white-space:nowrap;z-index:5;
+}
+.fin-note{margin-top:18px;font-size:.76rem;color:#7E92AF;max-width:900px}
+.plan-switch{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:24px}
+.plan-switch button{
+  border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#C7D3E4;
+  border-radius:100px;padding:8px 18px;font-size:.9rem;font-weight:700;cursor:pointer;transition:.2s;
+}
+.plan-switch button.active{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#231603;border-color:transparent}
+.tbl-toggle{margin:22px auto 0;display:flex;justify-content:center}
+.years-wrap{max-height:0;overflow:hidden;transition:max-height .5s ease}
+.years-wrap.open{max-height:1800px}
+.years{margin-top:20px;border-radius:var(--radius);border:1px solid rgba(255,255,255,.12)}
+table.yr{width:100%;border-collapse:collapse;font-size:.86rem;min-width:520px}
+table.yr th,table.yr td{padding:8px 14px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08)}
+table.yr thead th{background:rgba(255,255,255,.07);font-weight:700;color:#fff}
+table.yr td{color:#C9D6E9}
+table.yr tr.be td{background:rgba(240,167,43,.12);color:var(--sun);font-weight:700}
+table.yr tr:last-child td{border-bottom:none}
+
+/* ===================== מה כלול בכל מסלול ===================== */
+.gifts{padding-top:44px}
+.gifts .grid-3 .card{text-align:center;border-top:4px solid var(--gold)}
+.gifts .card .ico{margin:0 auto 14px}
+.gift-tag{
+  display:inline-block;background:var(--green-bg);color:var(--green);
+  font-size:.76rem;font-weight:800;padding:3px 11px;border-radius:100px;margin-bottom:9px;
+}
+.gift-tag.opt{background:#EAF1FB;color:#2E5AA8}
+.gift-value{margin-top:9px;font-size:.83rem;color:var(--gold-deep);font-weight:700}
+
+/* ===================== מפרט ===================== */
+.spec-tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+.spec-tab{
+  border:1.5px solid var(--line);background:#fff;border-radius:100px;
+  padding:8px 18px;font-size:.9rem;font-weight:700;color:var(--muted);cursor:pointer;transition:.2s;
+}
+.spec-tab.active{background:var(--navy-900);border-color:var(--navy-900);color:#fff}
+.spec-panel{display:none}
+.spec-panel.active{display:block}
+.spec-box{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+.spec-box h3{font-size:1.22rem;font-weight:800;margin-bottom:9px}
+.spec-box p{color:var(--muted);margin-bottom:14px}
+.spec-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.spec-list li{display:flex;gap:9px;align-items:flex-start;font-size:.92rem}
+.spec-list svg{width:17px;height:17px;color:var(--gold-deep);flex:0 0 auto;margin-top:3px}
+.spec-visual{background:linear-gradient(150deg,var(--navy-900),var(--navy-700));border-radius:18px;padding:24px;color:#fff;text-align:center}
+.spec-visual .big{font-size:2.1rem;font-weight:900;color:var(--sun)}
+.spec-visual .cap{color:#AEBFD8;font-size:.84rem;margin-top:3px}
+.tier-strip{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin-top:14px}
+.tier-chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:4px 11px;font-size:.76rem;font-weight:600;letter-spacing:.03em}
+
+/* ===================== תהליך ===================== */
+.timeline{position:relative;max-width:820px;margin:0 auto}
+.timeline::before{content:"";position:absolute;top:8px;bottom:8px;inset-inline-start:23px;width:3px;background:linear-gradient(180deg,var(--gold),#E4EAF2);border-radius:2px}
+.step{position:relative;padding-inline-start:68px;margin-bottom:12px}
+.step-dot{
+  position:absolute;inset-inline-start:7px;top:6px;width:34px;height:34px;border-radius:50%;
+  background:#fff;border:3px solid var(--gold);color:var(--navy-900);
+  display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.9rem;box-shadow:var(--shadow);
+}
+.step-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.step-head{width:100%;background:none;border:none;color:inherit;text-align:start;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px}
+.step-head h3{font-size:1rem;font-weight:800}
+.step-head .who{font-size:.76rem;color:var(--muted);font-weight:500;margin-top:2px}
+.step-head .chev{transition:.3s;color:var(--soft);flex:0 0 auto}
+.step.open .chev{transform:rotate(180deg)}
+.step-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.step.open .step-body{max-height:420px}
+.step-body ul{list-style:none;padding:0 20px 18px;display:flex;flex-direction:column;gap:7px}
+.step-body li{display:flex;gap:9px;font-size:.88rem;color:#42546E}
+.step-body li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);flex:0 0 auto;margin-top:9px}
+.duration-chip{
+  display:flex;gap:10px;align-items:center;justify-content:center;margin:26px auto 0;width:fit-content;max-width:92%;
+  background:#fff;border:1px solid var(--line);border-radius:100px;padding:10px 20px;font-weight:700;box-shadow:var(--shadow);text-align:center;font-size:.92rem;
+}
+.duration-chip svg{width:18px;height:18px;color:var(--gold-deep);flex:0 0 auto}
+
+/* תשלומים */
+.payments{padding-top:48px}
+.pay-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:11px;margin-top:6px}
+.pay{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 12px;text-align:center;box-shadow:var(--shadow)}
+.pay .pct{font-size:1.4rem;font-weight:900;color:var(--gold-deep)}
+.pay .cum{font-size:.72rem;color:var(--gold-deep);font-weight:800;margin-top:3px}
+.pay .when{font-size:.78rem;color:var(--muted);margin-top:5px}
+.pay-note{text-align:center;color:var(--soft);font-size:.8rem;margin-top:16px}
+
+/* כלול / לא כלול */
+.included{padding-top:48px}
+.inc-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.inc-card{background:#fff;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow);padding:26px}
+.inc-card h3{display:flex;align-items:center;gap:10px;font-size:1.06rem;font-weight:800;margin-bottom:14px}
+.inc-card h3 svg{width:21px;height:21px}
+.inc-card.yes h3 svg{color:var(--green)}
+.inc-card.no h3 svg{color:#D9822B}
+.inc-card ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.inc-card li{display:flex;gap:9px;align-items:flex-start;font-size:.9rem;color:#33465F}
+.inc-card.yes li svg{width:16px;height:16px;color:var(--green);flex:0 0 auto;margin-top:3px}
+.inc-card.no li svg{width:16px;height:16px;color:#D9822B;flex:0 0 auto;margin-top:3px}
+
+/* ===================== שאלות ===================== */
+.faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:11px}
+.faq{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 20px;background:none;border:none;font-size:.98rem;font-weight:700;color:var(--ink);cursor:pointer;text-align:right}
+.faq-q .chev{transition:.3s;color:var(--soft);flex:0 0 auto}
+.faq.open .chev{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq.open .faq-a{max-height:320px}
+.faq-a p{padding:0 20px 18px;color:var(--muted);font-size:.92rem}
+.closing{
+  max-width:780px;margin:34px auto 0;text-align:center;color:#fff;
+  background:linear-gradient(160deg,var(--navy-950),var(--navy-800));
+  border-radius:22px;padding:30px 24px;box-shadow:var(--shadow-lg);
+}
+.closing h3{font-size:1.3rem;font-weight:800;margin-bottom:6px}
+.closing p{color:#C9D6E9;margin-bottom:18px;font-size:.95rem}
+.closing .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.closing .validity-line{margin-top:18px;color:var(--sun);font-size:.86rem;font-weight:600}
+.mini-foot{max-width:780px;margin:26px auto 0;text-align:center;color:var(--soft);font-size:.76rem;line-height:1.8}
+
+/* ===================== סרגל אפליקציה תחתון ===================== */
+.appbar{
+  position:fixed;bottom:0;right:0;left:0;z-index:180;display:none;
+  background:rgba(7,15,34,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-top:1px solid rgba(255,255,255,.1);
+  padding:8px 4px calc(8px + env(safe-area-inset-bottom));
+}
+.appbar-in{display:grid;grid-template-columns:repeat(6,1fr);max-width:560px;margin:0 auto}
+.appbar button{
+  background:none;border:none;color:#8FA2BE;cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;gap:3px;
+  font-size:.62rem;font-weight:600;padding:4px 2px;border-radius:10px;transition:.2s;
+}
+.appbar button svg{width:21px;height:21px}
+.appbar button.active{color:var(--sun)}
+.appbar button.active svg{filter:drop-shadow(0 0 8px rgba(255,201,77,.55))}
+.wa-fab{
+  position:fixed;bottom:calc(var(--appbar-h) + env(safe-area-inset-bottom) + 14px);inset-inline-end:14px;z-index:170;display:none;
+  width:52px;height:52px;border-radius:50%;background:#22B75B;color:#fff;
+  align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(34,183,91,.45);
+}
+.wa-fab svg{width:26px;height:26px}
+@media(max-width:820px){
+  .appbar{display:block}
+  .wa-fab{display:flex}
+  nav.desktop-tabs{display:none}
+  .header-cta .btn-ghost{display:none}
+}
+
+/* ===================== רספונסיבי ===================== */
+@media(max-width:1060px){
+  .plans{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:980px){
+  .fin-grid{grid-template-columns:1fr}
+  .spec-box{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat{border-inline-start:none;border-top:1px solid var(--line)}
+  .stat:nth-child(1),.stat:nth-child(2){border-top:none}
+  .stat:nth-child(even){border-inline-start:1px solid var(--line)}
+}
+@media(max-width:820px){
+  .grid-3{grid-template-columns:1fr}
+  .plans{grid-template-columns:1fr;gap:20px}
+  .plan .sub{min-height:0}
+  .inc-grid{grid-template-columns:1fr}
+  .pay-flow{grid-template-columns:1fr 1fr;gap:10px}
+  .hero{padding:40px 0 100px}
+  .honor-in{flex-direction:column;gap:12px}
+  #scr-finance .wrap{padding:28px 16px;border-radius:20px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
+}
+[data-anim]{opacity:0}
+.no-js [data-anim],[data-anim].shown{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header>
+  <div class="header-in">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="24" r="10" fill="#F0A72B"/>
+        <g stroke="#F0A72B" stroke-width="3" stroke-linecap="round">
+          <line x1="24" y1="4" x2="24" y2="10"/><line x1="24" y1="38" x2="24" y2="44"/>
+          <line x1="4" y1="24" x2="10" y2="24"/><line x1="38" y1="24" x2="44" y2="24"/>
+          <line x1="9.9" y1="9.9" x2="14.1" y2="14.1"/><line x1="33.9" y1="33.9" x2="38.1" y2="38.1"/>
+          <line x1="9.9" y1="38.1" x2="14.1" y2="33.9"/><line x1="33.9" y1="14.1" x2="38.1" y2="9.9"/>
+        </g>
+        <path d="M21 20h7l-4 8h-4l3-6h-2z" fill="#0A1B33"/>
+      </svg>
+      <div>
+        <div class="brand-name">כהן מערכות אנרגיה</div>
+        <div class="brand-sub">הצעת מחיר · כוחות הביטחון ערד</div>
+      </div>
+    </div>
+    <nav class="desktop-tabs" id="deskTabs" aria-label="ניווט ראשי"></nav>
+    <div class="header-cta">
+      <a class="btn btn-ghost btn-sm" id="phoneHeader" href="#">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="num" id="phoneHeaderNum"></span>
+      </a>
+      <a class="btn btn-gold btn-sm" id="waHeader" href="#" target="_blank" rel="noopener">וואטסאפ</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== מסך הבית ===================== -->
+<section class="screen active" id="scr-home" data-screen="home">
+  <div class="hero">
+    <div class="orb o1"></div><div class="orb o2"></div>
+    <div class="container">
+      <div class="hero-badge" data-anim><span class="dot"></span> מסלול בלעדי לאנשי הקבע וכוחות הביטחון · מתחם המגורים בערד</div>
+      <h1 data-anim>הבית שלכם כבר עומד —<br>עכשיו הזמן שהגג <span class="hl">יתחיל להרוויח</span></h1>
+      <p class="lede" data-anim>הזמן הטוב ביותר להקים מערכת סולארית הוא בסמוך לאכלוס: הגג חדש ופנוי, החשמל מסודר — וכל חודש שעובר בלי מערכת הוא הכנסה שלא חוזרת. תכנון, רישוי, התקנה ומסירה, בניהול ישיר של שחר כהן.</p>
+      <div class="hero-meta" data-anim>
+        <span class="meta-chip manager">מנהל הפרויקט: <b id="propManager"></b></span>
+        <span class="meta-chip">מס׳ הצעה: <b class="num" id="propNum"></b></span>
+        <span class="meta-chip">מיקום: <b id="propLoc"></b></span>
+        <span class="meta-chip validity">בתוקף: <b class="num" id="validRange"></b></span>
+      </div>
+      <div class="hero-actions" data-anim>
+        <a class="btn btn-wa" id="waHero" href="#" target="_blank" rel="noopener">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.9 9.88m8.42-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.33-1.66a11.9 11.9 0 0 0 5.66 1.44h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.48-8.4"/></svg>
+          דברו איתנו בוואטסאפ
+        </a>
+        <button class="btn btn-ghost" data-goto="plans">לצפייה במסלולים ←</button>
+      </div>
+      <div class="hero-trust" data-anim>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> ביצוע צוותי החברה בלבד — ללא קבלני משנה</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> ציוד Tier-1 בלבד</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> אחריות יצרן לפאנלים — 30 שנה</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-wrap container">
+    <div class="stats" data-anim>
+      <div class="stat"><div class="val"><em>₪</em><span class="counter num" id="stYear1" data-to="0">0</span></div><div class="lbl">צפי הכנסה בשנה הראשונה</div></div>
+      <div class="stat"><div class="val"><span class="counter num" id="stRoi" data-to="0" data-dec="1">0</span> שנים</div><div class="lbl">החזר השקעה מוערך</div></div>
+      <div class="stat"><div class="val"><em>₪</em><span class="counter num" id="stTotal" data-to="0">0</span>+</div><div class="lbl">צפי הכנסה מצטברת ל־25 שנים</div></div>
+      <div class="stat"><div class="val"><span class="counter num" data-to="30">0</span> שנה</div><div class="lbl">אחריות יצרן לפאנלים</div></div>
+    </div>
+    <div class="stats-note">הנתונים מתייחסים למסלול המומלץ (22.61) · פירוט מלא במסך התשואה</div>
+  </div>
+
+  <div class="honor container">
+    <div class="honor-in" data-anim>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+      <div>
+        <h3>אחרי שנים שאתם שומרים על הבית של כולנו — הגיע הזמן שהבית שלכם ישמור עליכם.</h3>
+        <p>כהן מערכות אנרגיה מלווה את אנשי הקבע וכוחות הביטחון במתחם המגורים בערד עם מסלול ייעודי: תמחור קבוצתי, סטנדרט ביצוע ללא פשרות וכתובת אחת לכל הדרך.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="why container">
+    <div class="screen-head">
+      <span class="kicker">התזמון הנכון</span>
+      <h2>נכנסתם הביתה? זה הזמן לחבר את הגג</h2>
+      <p>מערכת סולארית מקימים כשהבית מוכן — וככל שמקימים סמוך יותר לאכלוס, כך מתחילים להרוויח מוקדם יותר.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card" data-anim>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg></div>
+        <h3>גג חדש ופנוי — התקנה מהירה ונקייה</h3>
+        <p>גג בתחילת חייו, בלי מערכות ישנות ובלי הפתעות: הקונסטרוקציה מתוכננת למפרט הגג, האיטום נשמר, והעבודה מסתיימת מהר.</p>
+      </div>
+      <div class="card" data-anim>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>חשמל חדש ומסודר — תהליך פשוט</h3>
+        <p>בבית חדש לוח החשמל והחיבור מסודרים, ולכן ההכנות והבדיקות מתקדמות בצורה חלקה — פחות התאמות, פחות עיכובים.</p>
+      </div>
+      <div class="card" data-anim>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>כל חודש שעובר — הכנסה שלא חוזרת</h3>
+        <p>המערכת מרוויחה רק מרגע החיבור. ככל שמתחילים מוקדם יותר אחרי האכלוס — כך המונה רץ לטובתכם מוקדם יותר.</p>
+      </div>
+    </div>
+    <div class="loss-note" data-anim>
+      גג שנשאר ריק אחרי האכלוס מפסיד מדי חודש כ־<b class="num" id="lossMonthly">₪1,380</b> במסלול המומלץ — הכנסה שפשוט לא נכנסת לחשבון.
+    </div>
+    <div class="home-next">
+      <button class="btn btn-gold" data-goto="plans">למסלולים ולמחירים ←</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== מסך מסלולים ===================== -->
+<section class="screen" id="scr-plans" data-screen="plans">
+  <div class="container">
+    <div class="screen-head">
+      <span class="kicker">חמישה מסלולים · בחירה אחת נכונה</span>
+      <h2>בוחרים את המסלול שמתאים לבית שלכם</h2>
+      <p>כל המסלולים כוללים תכנון, רישוי, התקנה, גימור אדריכלי ומסירה מסודרת — ההבדל העיקרי הוא גודל המערכת. לחיצה על מסלול מעדכנת את נתוני התשואה.</p>
+      <span class="group-note">תמחור קבוצתי ייעודי לרוכשי המתחם בערד — אינו זמין ללקוח פרטי מחוץ לקבוצה</span>
+    </div>
+    <div class="plans" id="plans"></div>
+    <div class="picked-note" id="planPicked" aria-live="polite"></div>
+    <p class="compare-note" id="cmpNote"></p>
+    <div class="compare hscroll" data-anim>
+      <table class="cmp" id="cmpTable"></table>
+    </div>
+    <div class="home-next">
+      <button class="btn btn-gold" data-goto="finance">לצפייה בתשואה המלאה ←</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== מסך תשואה ===================== -->
+<section class="screen" id="scr-finance" data-screen="finance">
+  <div class="container">
+    <div class="wrap">
+      <div class="screen-head">
+        <span class="kicker">שקיפות מלאה</span>
+        <h2>המספרים שמאחורי ההחלטה</h2>
+        <p>צפי הכנסות ל־25 שנים, נקודת החזר ההשקעה והטבלה המלאה — לפי המסלול שבחרתם.</p>
+      </div>
+      <div class="plan-switch" id="planSwitch"></div>
+      <div class="fin-grid">
+        <div class="fin-side">
+          <div class="fin-card"><div class="t">עלות המערכת (כולל מע״מ)</div><div class="v num" id="fPrice"></div><div class="s" id="fPriceSub"></div></div>
+          <div class="fin-card"><div class="t">צפי הכנסה — שנה ראשונה</div><div class="v gold num" id="fYear1"></div><div class="s">כ־₪<span class="num" id="fMonthly"></span> בחודש בממוצע · תשואה שנתית של כ־<span class="num" id="fYield"></span>%</div></div>
+          <div class="fin-card"><div class="t">החזר השקעה מוערך</div><div class="v green num" id="fRoi"></div><div class="s">הנקודה שבה ההכנסה המצטברת מכסה את עלות המערכת</div></div>
+          <div class="fin-card"><div class="t">צפי הכנסה מצטברת ל־25 שנים</div><div class="v num" id="fTotal"></div><div class="s">פי <span class="num" id="fMultiple"></span> מעלות המערכת</div></div>
+        </div>
+        <div class="chart-card">
+          <h3>הכנסה מצטברת לאורך 25 שנים — <span class="sel-name" id="chartPlanName"></span></h3>
+          <div class="hint">געו בגרף לצפייה בנתוני כל שנה · הקו המקווקו מסמן את עלות המערכת</div>
+          <svg id="chart" viewBox="0 0 860 380" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="chart-tip" id="chartTip"></div>
+        </div>
+      </div>
+      <div class="tbl-toggle">
+        <button class="btn btn-ghost" id="tblBtn">הצגת טבלת ההכנסות המלאה — 25 שנים</button>
+      </div>
+      <div class="years-wrap" id="yearsWrap">
+        <div class="years hscroll">
+          <table class="yr" id="yearsTable"></table>
+        </div>
+      </div>
+      <p class="fin-note">הנתונים הכלכליים מוצגים כצפי מקצועי ומבוססים על נתוני המערכת והאתר כפי שנמסרו ונבדקו, בשילוב נתוני קרינה ארציים ממאגרים מקצועיים מוכרים. החישוב מניח שחיקת תפוקה טבעית של כ־0.5% בשנה. התפוקה בפועל עשויה להשתנות בהתאם לתנאי שטח, הצללות וזמינות רשת. התעריף נקבע על ידי רשות החשמל במועד אישור המערכת (אישור P.V).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== מסך מפרט ===================== -->
+<section class="screen" id="scr-spec" data-screen="spec">
+  <div class="container">
+    <div class="screen-head">
+      <span class="kicker">ציוד מהשורה הראשונה בעולם</span>
+      <h2>מפרט טכני — בלי פשרות ובלי אותיות קטנות</h2>
+      <p>אנחנו מתקינים אך ורק ציוד מיצרניות בדירוג Tier-1 העולמי, עם אחריות יצרן מלאה ותמיכה מקומית.</p>
+    </div>
+    <div class="spec-tabs">
+      <button class="spec-tab active" data-panel="p1">פאנלים</button>
+      <button class="spec-tab" data-panel="p2">ממיר</button>
+      <button class="spec-tab" data-panel="p3">קונסטרוקציה ובטיחות</button>
+      <button class="spec-tab" data-panel="p4">ניטור — אופציה</button>
+    </div>
+    <div class="spec-panel active" id="p1">
+      <div class="spec-box" data-anim>
+        <div>
+          <h3>פאנלים <span class="num">665</span> TIER 1</h3>
+          <p>פאנלים בהספק <span class="num">665W</span> מיצרניות בדירוג Tier-1 העולמי — תפוקה גבוהה מכל מטר גג וביצועים יציבים גם בטמפרטורות הקיץ של ערד.</p>
+          <ul class="spec-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>אחריות יצרן ל־30 שנה על התפוקה</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>נצילות גבוהה במיוחד — ניצול מרבי של שטח הגג</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>עמידות משופרת בהצללות חלקיות ובחום קיצוני</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>מראה אחיד וכהה — אסתטיקה מודרנית לבית חדש</span></li>
+          </ul>
+        </div>
+        <div class="spec-visual">
+          <div class="big num">665W</div>
+          <div class="cap">הספק לפאנל</div>
+          <div class="tier-strip">
+            <span class="tier-chip">RISEN</span><span class="tier-chip">JINKO</span><span class="tier-chip">LONGI</span><span class="tier-chip">AIKO</span><span class="tier-chip">SOLARSPACE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spec-panel" id="p2">
+      <div class="spec-box" data-anim>
+        <div>
+          <h3>ממיר SolarEdge Hybrid — טכנולוגיה ישראלית מהמובילות בעולם</h3>
+          <p>הלב של המערכת: ממיר היברידי חכם שממקסם את התפוקה של כל פאנל בנפרד, מוכן לחיבור סוללת אגירה בעתיד, ומגובה בתמיכה מקומית מלאה של היצרן.</p>
+          <ul class="spec-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>אופטימיזציה ברמת הפאנל הבודד — הצללה על פאנל אחד לא מפילה את השורה</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>Hybrid-Ready — מוכן לשילוב אגירה ללא החלפת ממיר</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>כיבוי בטיחותי אוטומטי ברמת הפאנל (SafeDC)</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>אחריות יצרן ל־12 שנה, עם אפשרות הרחבה עד 25 שנה</span></li>
+          </ul>
+        </div>
+        <div class="spec-visual">
+          <div class="big">Hybrid</div>
+          <div class="cap">ממיר SolarEdge</div>
+          <div class="tier-strip"><span class="tier-chip">SAFE-DC</span><span class="tier-chip">HYBRID READY</span><span class="tier-chip">ISRAELI TECH</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="spec-panel" id="p3">
+      <div class="spec-box" data-anim>
+        <div>
+          <h3>קונסטרוקציה תקנית — בלי לגעת באיטום</h3>
+          <p>הקונסטרוקציה מותאמת לסוג הגג ולמפרט הבנייה, בתכנון שמכבד את הבית שלכם: עיגון תקני, פיזור עומסים נכון ושמירה מלאה על האיטום.</p>
+          <ul class="spec-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>אלומיניום ונירוסטה עמידים לעשרות שנים בתנאי מדבר</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>עמידה בתקני רוח ועומסים ישראליים</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>הארקה ומיגון ברקים בהתאם לדרישות חברת החשמל</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>ביקורת בודק חשמל מוסמך לפני חיבור לרשת</span></li>
+          </ul>
+        </div>
+        <div class="spec-visual">
+          <div class="big">100%</div>
+          <div class="cap">שמירה על שלמות הגג והאיטום</div>
+          <div class="tier-strip"><span class="tier-chip">תקן ישראלי</span><span class="tier-chip">בודק מוסמך</span><span class="tier-chip">מיגון ברקים</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="spec-panel" id="p4">
+      <div class="spec-box" data-anim>
+        <div>
+          <h3>ניטור — אופציה בכל המסלולים</h3>
+          <p>בכל המסלולים ניתן לצרף שירותי חברת ניטור ואחזקה במחיר מוזל — מעקב שוטף אחר המערכת וטיפול מקצועי לאורך השנים.</p>
+          <ul class="spec-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>ניטור רציף</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>אפליקציה בעברית</span></li>
+          </ul>
+        </div>
+        <div class="spec-visual">
+          <div class="big">24/7</div>
+          <div class="cap">ניטור רציף</div>
+          <div class="tier-strip"><span class="tier-chip">אפליקציה בעברית</span><span class="tier-chip">מחיר מוזל לחברי המסלול</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gifts">
+      <div class="screen-head">
+        <span class="kicker">בלעדי למסלול כוחות הביטחון</span>
+        <h2>מה מקבלים בכל המסלולים</h2>
+        <p>שתי הטבות כלולות במחיר בכל המסלולים — ואופציה משלימה בתנאים מוזלים, לפי בחירתכם.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card" data-anim>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+          <span class="gift-tag">כלול</span>
+          <h3>גימור אדריכלי ועיצוב</h3>
+          <p>מסתור מעוצב לקיר הממירים, תעלות מוסתרות ומראה נקי שמשתלב בבית — המערכת נראית חלק מהבית, לא תוספת.</p>
+          <div class="gift-value">בכל המסלולים — ללא עלות</div>
+        </div>
+        <div class="card" data-anim>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <span class="gift-tag">כלול</span>
+          <h3>הרחבת אחריות התקנה ל־15 שנה</h3>
+          <p>התחייבות ארוכת טווח לעבודות ההתקנה, הקונסטרוקציה והחיבורים — חתומה בהסכם ההתקשרות.</p>
+          <div class="gift-value">שווי אלפי שקלים — ללא עלות</div>
+        </div>
+        <div class="card" data-anim>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 10l3 3 6-6"/></svg></div>
+          <span class="gift-tag opt">אופציה</span>
+          <h3>חברת ניטור ואחזקה — במחיר מוזל</h3>
+          <p>בכל המסלולים ניתן לצרף שירותי ניטור ואחזקה של חברה ייעודית בתנאים מוזלים לחברי המסלול.</p>
+          <div class="gift-value">לפי בחירתכם</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== מסך תהליך ===================== -->
+<section class="screen" id="scr-process" data-screen="process">
+  <div class="container">
+    <div class="screen-head">
+      <span class="kicker">תוכנית ליווי מסודרת</span>
+      <h2>מהחתימה ועד המונה שרץ לטובתכם — שלב אחר שלב</h2>
+      <p>אתם לא צריכים להבין ברגולציה, בטפסים או בחברת החשמל — בשביל זה אנחנו כאן. לחצו על כל שלב לפירוט.</p>
+    </div>
+    <div class="timeline" id="timeline"></div>
+    <div class="duration-chip" data-anim>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <span>משך פרויקט ממוצע: כחודשיים · זמן הפרויקט יכול להתקצר או להתארך בהתאם לזמני הטיפול של חברת החשמל</span>
+    </div>
+
+    <div class="payments">
+      <div class="screen-head">
+        <span class="kicker">תשלום צמוד לאבני דרך</span>
+        <h2>פעימות תשלום לאורך הפרויקט</h2>
+        <p>התשלום מחולק לפעימות לפי שלבי הפרויקט — והפעימה האחרונה משולמת רק כשהמערכת מחוברת ומייצרת.</p>
+      </div>
+      <div class="pay-flow" data-anim>
+        <div class="pay"><div class="pct num">10%</div><div class="cum">מקדמה</div><div class="when">במעמד חתימת הסכם ההתקשרות</div></div>
+        <div class="pay"><div class="pct num">20%</div><div class="cum">סה״כ עד כאן: 30%</div><div class="when">עם קבלת אישור P.V מחברת החשמל (עד 7 ימים מקבלת האישור)</div></div>
+        <div class="pay"><div class="pct num">40%</div><div class="cum">סה״כ עד כאן: 70%</div><div class="when">ביום תחילת התקנת הקונסטרוקציה — תנאי לתחילת העבודות</div></div>
+        <div class="pay"><div class="pct num">20%</div><div class="cum">סה״כ עד כאן: 90%</div><div class="when">בסיום עבודות ההתקנה (עד 3 ימים מסיומן)</div></div>
+        <div class="pay"><div class="pct num">10%</div><div class="cum">סה״כ: 100%</div><div class="when">במועד חיבור המונה — כשהמערכת כבר מייצרת</div></div>
+      </div>
+      <p class="pay-note">התשלום האחרון משולם רק כשהמערכת מחוברת ומייצרת. המועדים המחייבים ופרטי התשלום המלאים מוסדרים בהסכם ההתקשרות.</p>
+    </div>
+
+    <div class="included">
+      <div class="screen-head">
+        <span class="kicker">שקיפות עד הסוף</span>
+        <h2>מה כלול במחיר — ומה לא</h2>
+        <p>אנחנו מעדיפים שתדעו הכול מראש. בלי הפתעות בסוף הדרך.</p>
+      </div>
+      <div class="inc-grid">
+        <div class="inc-card yes" data-anim>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg> כלול במחיר</h3>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>תכנון הנדסי מלא על ידי מהנדס חשמל, כולל תכניות פריסה וחיבור</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>ניהול הרישוי, האישורים והתיאומים מול חברת החשמל עד אישור P.V</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>אספקת כל רכיבי המערכת בהתאם למפרט הטכני שבהצעה</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>קונסטרוקציה, חיווט, חיבורים והתקנה מלאה על ידי צוותי החברה</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>גימור אדריכלי, עיצוב ומסתור לקיר ממירים — בכל המסלולים</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>בדיקות תקינות, ליווי ביקורת בודק מוסמך והכנת המערכת לחיבור מונה</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>תיעוד מלא, תיק מסירה מסודר והדרכה אישית על המערכת</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>בחבילת פרימיום פלוס: הכנת תשתית מלאה לאגירה</span></li>
+          </ul>
+        </div>
+        <div class="inc-card no" data-anim>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg> לא כלול במחיר</h3>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg><span>אגרות רישום וחיבור של חברת החשמל — משולמות ישירות לחברת החשמל ובאחריות הלקוח; גובה האגרות משתנה בהתאם לגודל המערכת</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg><span>הגדלת חיבור החשמל בבית, ככל שתידרש על ידי חברת החשמל</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg><span>סולם קבוע לגג, ככל שיידרש על ידי הלקוח או חברת החשמל — תימסר הצעה נפרדת</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg><span>שירותי ניטור ואחזקה שוטפים — ניתן לצרף חברת ניטור ואחזקה במחיר מוזל, לפי בחירתכם</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== מסך שאלות ===================== -->
+<section class="screen" id="scr-faq" data-screen="faq">
+  <div class="container">
+    <div class="screen-head">
+      <span class="kicker">כל מה שרציתם לדעת</span>
+      <h2>שאלות נפוצות</h2>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+
+    <div class="closing" data-anim>
+      <h3>מוכנים להתקדם?</h3>
+      <p>שלחו הודעה או התקשרו לשחר — ונתאם בדיקת התאמה ראשונית ללא עלות וללא התחייבות.</p>
+      <div class="actions">
+        <a class="btn btn-wa" id="waFinal" href="#" target="_blank" rel="noopener">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.9 9.88m8.42-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.33-1.66a11.9 11.9 0 0 0 5.66 1.44h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.48-8.4"/></svg>
+          וואטסאפ לשחר
+        </a>
+        <a class="btn btn-ghost" id="phoneFinal" href="#">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>להתקשר: <span class="num" id="phoneFinalNum"></span></span>
+        </a>
+      </div>
+      <div class="validity-line">ההצעה בתוקף: <span class="num" id="validRange2"></span></div>
+    </div>
+
+    <p class="mini-foot">
+      כהן מערכות אנרגיה · שחר כהן — מנהל הפרויקט · <span class="num" id="footPhone"></span><br>
+      הנתונים הכלכליים הם צפי מקצועי ואינם הבטחה חוזית · התעריף נקבע על ידי רשות החשמל במועד אישור P.V · ט.ל.ח
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== סרגל אפליקציה (מובייל) ===================== -->
+<nav class="appbar" aria-label="ניווט תחתון">
+  <div class="appbar-in" id="appbarIn"></div>
+</nav>
+<a class="wa-fab" id="waFab" href="#" target="_blank" rel="noopener" aria-label="וואטסאפ">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.9 9.88m8.42-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.33-1.66a11.9 11.9 0 0 0 5.66 1.44h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.48-8.4"/></svg>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script>
+/* =====================================================================
+   ⚙️ הגדרות ההצעה — כל המספרים והפרטים לעריכה נמצאים כאן בלבד.
+   ===================================================================== */
+const DATA = {
+  company: {
+    name: "כהן מערכות אנרגיה",
+    manager: "שחר כהן",
+    phoneDisplay: "054-8373494",
+    phoneDial: "+972548373494",
+    whatsapp: "972548373494"
+  },
+  proposal: {
+    number: "2026-07-042",
+    validFrom: "23.07.2026",
+    validTo: "23.08.2026",
+    location: "מתחם המגורים לכוחות הביטחון, ערד"
+  },
+  degradationPct: 0.5,
+  vatPct: 18,
+  years: 25,
+  waMessage: "שלום שחר, קיבלתי את הצעת המחיר של כהן מערכות אנרגיה למסלול כוחות הביטחון בערד, ואשמח לתאם בדיקת התאמה ללא עלות.",
+  plans: [
+    {
+      id: "p15",
+      name: "15K",
+      tag: "כניסה משתלמת",
+      tagAlt: true,
+      sub: "מערכת של כ־15kWp — 23 פאנלים",
+      size: "כ־15kWp",
+      panels: "23 פאנלים · 665W",
+      inverter: "ממיר SolarEdge Hybrid",
+      price: 58410,
+      year1: 11016,
+      kwh1: 22950,
+      recommended: false,
+      storageReady: false,
+      features: [
+        { t: "תכנון, רישוי, התקנה ומסירה — מקצה לקצה", ok: true },
+        { t: "גימור אדריכלי, עיצוב ומסתור לקיר ממירים", ok: true },
+        { t: "ממיר היברידי מוכן לאגירה", ok: true },
+        { t: "אופציה: חברת ניטור ואחזקה במחיר מוזל", ok: true },
+        { t: "הכנת תשתית מלאה לאגירה", ok: false }
+      ]
+    },
+    {
+      id: "p18",
+      name: "18K",
+      tag: "צעד אחד קדימה",
+      tagAlt: true,
+      sub: "מערכת של כ־18kWp — 27 פאנלים",
+      size: "כ־18kWp",
+      panels: "27 פאנלים · 665W",
+      inverter: "ממיר SolarEdge Hybrid",
+      price: 65844,
+      year1: 13219,
+      kwh1: 27540,
+      recommended: false,
+      storageReady: false,
+      features: [
+        { t: "תכנון, רישוי, התקנה ומסירה — מקצה לקצה", ok: true },
+        { t: "גימור אדריכלי, עיצוב ומסתור לקיר ממירים", ok: true },
+        { t: "ממיר היברידי מוכן לאגירה", ok: true },
+        { t: "אופציה: חברת ניטור ואחזקה במחיר מוזל", ok: true },
+        { t: "הכנת תשתית מלאה לאגירה", ok: false }
+      ]
+    },
+    {
+      id: "p20",
+      name: "20K",
+      tag: "פופולרי",
+      tagAlt: true,
+      sub: "מערכת של כ־20kWp — 30 פאנלים",
+      size: "כ־20kWp",
+      panels: "30 פאנלים · 665W",
+      inverter: "ממיר SolarEdge Hybrid",
+      price: 66900,
+      year1: 14688,
+      kwh1: 30600,
+      recommended: false,
+      storageReady: false,
+      features: [
+        { t: "תכנון, רישוי, התקנה ומסירה — מקצה לקצה", ok: true },
+        { t: "גימור אדריכלי, עיצוב ומסתור לקיר ממירים", ok: true },
+        { t: "ממיר היברידי מוכן לאגירה", ok: true },
+        { t: "אופציה: חברת ניטור ואחזקה במחיר מוזל", ok: true },
+        { t: "הכנת תשתית מלאה לאגירה", ok: false }
+      ]
+    },
+    {
+      id: "p2261",
+      name: "22.61",
+      tag: "המומלץ ביותר ★",
+      tagAlt: false,
+      sub: "22.61kWp — ניצול מלא של הגג, 34 פאנלים",
+      size: "22.61kWp",
+      panels: "34 פאנלים · 665W",
+      inverter: "ממיר SolarEdge Hybrid",
+      price: 68900,
+      year1: 16608,
+      kwh1: 34600,
+      recommended: true,
+      storageReady: false,
+      features: [
+        { t: "תכנון, רישוי, התקנה ומסירה — מקצה לקצה", ok: true },
+        { t: "גימור אדריכלי, עיצוב ומסתור לקיר ממירים", ok: true },
+        { t: "ממיר היברידי מוכן לאגירה", ok: true },
+        { t: "אופציה: חברת ניטור ואחזקה במחיר מוזל", ok: true },
+        { t: "ניצול מלא של שטח הגג (34 פאנלים)", ok: true }
+      ]
+    },
+    {
+      id: "premium",
+      name: "פרימיום פלוס",
+      tag: "מוכן לעתיד",
+      tagAlt: true,
+      sub: "22.61kWp + הכנת תשתית מלאה לאגירה",
+      size: "22.61kWp",
+      panels: "34 פאנלים · 665W",
+      inverter: "ממיר SolarEdge Hybrid + הכנת אגירה מלאה",
+      price: 76900,
+      year1: 16608,
+      kwh1: 34600,
+      recommended: false,
+      storageReady: true,
+      features: [
+        { t: "תכנון, רישוי, התקנה ומסירה — מקצה לקצה", ok: true },
+        { t: "גימור אדריכלי, עיצוב ומסתור לקיר ממירים", ok: true },
+        { t: "הכנת תשתית מלאה לאגירה: שרוולים ולוח מוכן", ok: true },
+        { t: "אופציה: חברת ניטור ואחזקה במחיר מוזל", ok: true },
+        { t: "ניצול מלא של שטח הגג (34 פאנלים)", ok: true }
+      ]
+    }
+  ],
+  faq: [
+    { q: "כמה זמן לוקח כל התהליך?", a: "משך פרויקט ממוצע הוא כחודשיים מרגע החתימה ועד חיבור המונה — רובו המתנה לאישורי חברת החשמל, שמנוהלים כולם על ידינו. זמן הפרויקט יכול להתקצר או להתארך בהתאם לזמני הטיפול של חברת החשמל." },
+    { q: "מי קובע את התעריף שאקבל, ולכמה זמן הוא מובטח?", a: "התעריף נקבע על ידי רשות החשמל במועד אישור המערכת (אישור P.V), ומעוגן בהסדרה לתקופה ארוכה. ההכנסה משולמת דרך חשבון החשמל — באופן ישיר ומסודר." },
+    { q: "מה קורה בימים מעוננים ובחורף?", a: "הצפי השנתי שבהצעה כבר משקלל את כל עונות השנה — קיץ שופע שמש לצד ימי חורף מעוננים. אזור ערד הוא מאזורי קרינת השמש המובילים בישראל, ולכן הצפי השנתי יציב במיוחד." },
+    { q: "האם יש מס על ההכנסה מהמערכת?", a: "נכון להיום, הכנסה ממכירת חשמל סולארי ביתי פטורה ממס הכנסה עד התקרה השנתית הקבועה בחוק — ורוב המערכות הביתיות נמצאות מתחת לתקרה. לפרטים מדויקים מומלץ להתייעץ עם רואה חשבון." },
+    { q: "האם ההתקנה עלולה לפגוע בגג או באיטום?", a: "לא. הקונסטרוקציה מתוכננת בהתאם לסוג הגג ולמפרט הבנייה, בעיגון תקני ששומר על שלמות האיטום. על עבודות ההתקנה אתם מקבלים אחריות ל־15 שנה." },
+    { q: "מה קורה אם נמכור את הבית?", a: "המערכת עוברת לרוכש יחד עם ההכנסות שלה — נכס מניב מחובר לבית שמגדיל את ערכו ואת האטרקטיביות שלו בשוק. אנחנו מלווים את העברת הרישום ללא עלות." },
+    { q: "האם אפשר להוסיף סוללת אגירה בהמשך?", a: "כן. הממיר ההיברידי שאנחנו מתקינים מוכן לחיבור אגירה גם בעתיד. במסלול פרימיום פלוס מוכנה כבר כל התשתית — כך שהוספת סוללה בעתיד היא עניין של שעות, לא של שיפוץ." },
+    { q: "למה לסגור דרך המסלול הייעודי ולא לבד מול השוק?", a: "המסלול מרכז עבורכם תמחור קבוצתי ייעודי לכוחות הביטחון והטבות שאינן זמינות ללקוח בודד — לצד ביצוע של צוותי החברה בלבד, ללא קבלני משנה, וכתובת אחת לכל הדרך: שחר כהן." }
+  ],
+  process: [
+    { name: "קדם־פרויקט ובדיקת התאמה", who: "שחר כהן · ללא עלות", items: ["סקירה מקצועית בבית ובגג", "צילום ותיעוד המבנה, ארונות החשמל ותוואי המערכת", "התאמת גודל המערכת לגג ולחיבור", "הגשת הצעת מחיר מסודרת והסכם התקשרות שקוף"] },
+    { name: "רישום, תכנון הנדסי ואסדרה", who: "מול חברת החשמל", items: ["רישום הפרויקט בחברת החשמל", "תכנון מלא על ידי מהנדס חשמל מוסמך", "הכנת תכנית פריסת פאנלים ותכניות חיבור למבנה", "הדמיית פריסת הפאנלים על הגג — לאישורכם עוד לפני הביצוע", "הגשת התכניות וליווי עד קבלת אישור P.V"] },
+    { name: "היערכות לביצוע", who: "ניהול הפרויקט", items: ["סיור טכני וסקירת ממצאים", "תיאום מועד התקנה מולכם — בשעות שנוחות לכם", "הזמנת הציוד מיבואנים מקומיים מורשים", "תדרוך צוות ההתקנה על מפרט הפרויקט"] },
+    { name: "התקנת המערכת", who: "צוותי החברה בלבד", items: ["הקמת קונסטרוקציה תקנית מותאמת לגג", "התקנת הפאנלים, הממיר ומערך החיווט", "גימור אדריכלי ומסתור לקיר הממירים", "חיבור המערכת ללוח החשמל ובדיקות תקינות מלאות", "עבודה נקייה ומסודרת — הגג נמסר כפי שקיבלנו אותו"] },
+    { name: "מסירת אתר", who: "שחר כהן מול הלקוח", items: ["מעבר משותף על צ׳ק־ליסט מסירת אתר", "הכנת המערכת לקראת חיבור מונה", "הגשת כל המסמכים הנדרשים לזימון חיבור המונה"] },
+    { name: "חיבור מונה והפעלה", who: "חברת החשמל · בליווי מלא שלנו", items: ["קבלת מועד וחיבור המונה על ידי חברת החשמל", "הפעלת המערכת", "מסירת תיק פרויקט מלא והדרכה אישית", "ערוץ קשר ישיר לכל שאלה עתידית"] }
+  ]
+};
+
+/* ===================== עזרים ===================== */
+const money = n => "₪" + Math.round(n).toLocaleString("en-US");
+const $ = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
+const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function seriesFor(plan){
+  const rows = []; let cum = 0; let inc = plan.year1;
+  for(let y=1; y<=DATA.years; y++){
+    if(y>1) inc = inc * (1 - DATA.degradationPct/100);
+    cum += inc;
+    rows.push({year:y, income:inc, cum:cum});
+  }
+  return rows;
+}
+function roiFor(plan, rows){
+  for(let i=0;i<rows.length;i++){
+    if(rows[i].cum >= plan.price){
+      const prev = i===0 ? 0 : rows[i-1].cum;
+      return (i) + (plan.price - prev)/(rows[i].cum - prev);
+    }
+  }
+  return DATA.years;
+}
+
+/* ===================== ניווט בין מסכים (אפליקציה) ===================== */
+const SCREENS = [
+  { id: "home",    label: "בית",     icon: '<path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h5v-6h4v6h5V9.5"/>' },
+  { id: "plans",   label: "מסלולים", icon: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>' },
+  { id: "finance", label: "תשואה",   icon: '<path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v6h-6"/>' },
+  { id: "spec",    label: "מפרט",    icon: '<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 4v16"/><path d="M4 9h16"/>' },
+  { id: "process", label: "תהליך",   icon: '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>' },
+  { id: "faq",     label: "שאלות",   icon: '<circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/>' }
+];
+let currentScreen = "home";
+
+function buildNav(){
+  $("#deskTabs").innerHTML = SCREENS.map(s =>
+    `<button data-goto="${s.id}" aria-label="${s.label}">${s.label}</button>`).join("");
+  $("#appbarIn").innerHTML = SCREENS.map(s =>
+    `<button data-goto="${s.id}" aria-label="${s.label}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${s.icon}</svg>
+      <span>${s.label}</span>
+    </button>`).join("");
+}
+
+function setActiveNav(){
+  $$("[data-goto]").forEach(b => b.classList.toggle("active", b.dataset.goto === currentScreen));
+}
+
+function animateScreenIn(el){
+  const items = el.querySelectorAll("[data-anim]");
+  if(reduced || !window.gsap){
+    items.forEach(i => i.classList.add("shown"));
+    return;
+  }
+  items.forEach(i => i.classList.add("shown"));
+  gsap.fromTo(items, {autoAlpha:0, y:26}, {autoAlpha:1, y:0, duration:.55, stagger:.07, ease:"power3.out", overwrite:true, clearProps:"transform"});
+  const h = el.querySelector("h1, .screen-head h2");
+  if(h) gsap.fromTo(h, {autoAlpha:0, y:14}, {autoAlpha:1, y:0, duration:.5, ease:"power2.out", overwrite:true, clearProps:"transform"});
+}
+
+function goTo(id, push=true){
+  if(!SCREENS.some(s => s.id === id)) id = "home";
+  const next = document.querySelector(`[data-screen="${id}"]`);
+  const prev = document.querySelector(".screen.active");
+  if(!next || next === prev) { setActiveNav(); return; }
+  currentScreen = id;
+  const show = () => {
+    $$(".screen.active").forEach(s => s.classList.remove("active"));
+    next.classList.add("active");
+    window.scrollTo(0, 0);
+    setActiveNav();
+    if(push) history.pushState(null, "", "#" + id);
+    animateScreenIn(next);
+    if(id === "home") runCounters();
+    if(id === "finance") drawChartAnimated();
+  };
+  if(reduced || !window.gsap || !prev){ show(); return; }
+  gsap.to(prev, {autoAlpha:0, y:-14, duration:.18, ease:"power1.in", onComplete:() => {
+    gsap.set(prev, {clearProps:"all"});
+    show();
+  }});
+}
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-goto]");
+  if(b){ e.preventDefault(); goTo(b.dataset.goto); }
+});
+
+/* החלקה בין מסכים במובייל */
+(function initSwipe(){
+  let sx=0, sy=0, st=0;
+  const order = SCREENS.map(s=>s.id);
+  document.addEventListener("touchstart", e => {
+    if(e.touches.length > 1 || e.target.closest(".hscroll, #chart, .plan-switch, input, textarea")) { st = 0; return; }
+    st = Date.now(); sx = e.touches[0].clientX; sy = e.touches[0].clientY;
+  }, {passive:true});
+  document.addEventListener("touchcancel", () => { st = 0; }, {passive:true});
+  document.addEventListener("touchend", e => {
+    if(e.touches.length > 0) return;
+    if(!st || Date.now() - st > 600) return;
+    const dx = e.changedTouches[0].clientX - sx;
+    const dy = e.changedTouches[0].clientY - sy;
+    if(Math.abs(dx) < 70 || Math.abs(dy) > 50) return;
+    const i = order.indexOf(currentScreen);
+    /* RTL: החלקה שמאלה = המסך הבא, ימינה = הקודם */
+    if(dx < 0 && i < order.length-1) goTo(order[i+1]);
+    else if(dx > 0 && i > 0) goTo(order[i-1]);
+  }, {passive:true});
+})();
+
+/* ===================== פרטים כלליים ===================== */
+(function initMeta(){
+  const c = DATA.company, pr = DATA.proposal;
+  $("#propManager").textContent = c.manager;
+  $("#propNum").textContent = pr.number;
+  $("#propLoc").textContent = pr.location;
+  const range = pr.validFrom + " – " + pr.validTo;
+  $("#validRange").textContent = range;
+  $("#validRange2").textContent = range;
+  const waHref = "https://wa.me/" + c.whatsapp + "?text=" + encodeURIComponent(DATA.waMessage);
+  ["waHero","waFinal","waHeader","waFab"].forEach(id => { const el = document.getElementById(id); if(el) el.href = waHref; });
+  const tel = "tel:" + c.phoneDial;
+  ["phoneHeader","phoneFinal"].forEach(id => { const el = document.getElementById(id); if(el) el.href = tel; });
+  $("#phoneHeaderNum").textContent = c.phoneDisplay;
+  $("#phoneFinalNum").textContent = c.phoneDisplay;
+  $("#footPhone").textContent = c.phoneDisplay;
+
+  const rec = DATA.plans.find(x=>x.recommended) || DATA.plans[0];
+  const recRows = seriesFor(rec);
+  $("#stYear1").dataset.to = Math.round(rec.year1);
+  $("#stRoi").dataset.to = roiFor(rec, recRows).toFixed(1);
+  $("#stTotal").dataset.to = Math.floor(recRows[recRows.length-1].cum/1000)*1000;
+  $("#lossMonthly").textContent = "₪" + (Math.round(rec.year1/12/10)*10).toLocaleString("en-US");
+})();
+
+/* ===================== מונים ===================== */
+let countersDone = false;
+function runCounters(){
+  if(countersDone) return;
+  countersDone = true;
+  $$(".counter").forEach(el => {
+    const to = parseFloat(el.dataset.to);
+    const dec = parseInt(el.dataset.dec || "0");
+    if(reduced || !window.gsap){
+      el.textContent = dec ? to.toFixed(dec) : Math.round(to).toLocaleString("en-US");
+      return;
+    }
+    const obj = {v:0};
+    gsap.to(obj, {v:to, duration:1.6, ease:"power3.out", onUpdate(){
+      el.textContent = dec ? obj.v.toFixed(dec) : Math.round(obj.v).toLocaleString("en-US");
+    }});
+  });
+}
+
+/* ===================== כרטיסי מסלולים ===================== */
+let selectedId = "p2261";
+function renderPlans(){
+  const wrap = $("#plans");
+  wrap.innerHTML = DATA.plans.map(p => {
+    const rows = seriesFor(p);
+    const roi = roiFor(p, rows);
+    return `
+    <div class="plan" data-anim data-id="${p.id}">
+      <span class="flag ${p.tagAlt?"alt":""}">${p.tag}</span>
+      <h3>${p.name}</h3>
+      <div class="sub">${p.sub}</div>
+      <div class="price num">${money(p.price)} <small>כולל מע״מ</small></div>
+      <div class="roi-chip">↩ החזר מוערך: <span class="num">${roi.toFixed(1)}</span> שנים</div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span><b>${p.size}</b> · ${p.panels}</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span>${p.inverter}</span></li>
+        ${p.features.map(f => `<li class="${f.ok?"":"minus"}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="${f.ok?"M20 6L9 17l-5-5":"M18 6L6 18M6 6l12 12"}"/></svg><span>${f.t}</span></li>`).join("")}
+      </ul>
+      <button class="pick" type="button" aria-pressed="false">בחירת מסלול זה</button>
+    </div>`;
+  }).join("");
+  $$(".plan").forEach(el => el.addEventListener("click", () => selectPlan(el.dataset.id)));
+  applySelection();
+}
+function applySelection(){
+  $$(".plan").forEach(el => {
+    const sel = el.dataset.id === selectedId;
+    el.classList.toggle("selected", sel);
+    const btn = el.querySelector(".pick");
+    btn.textContent = sel ? "✓ המסלול הנבחר" : "בחירת מסלול זה";
+    btn.setAttribute("aria-pressed", String(sel));
+  });
+  $$("#planSwitch button").forEach(b => b.classList.toggle("active", b.dataset.plan === selectedId));
+}
+function selectPlan(id, announce=true){
+  if(id === selectedId) return;
+  selectedId = id;
+  applySelection();
+  renderFinance();
+  const p = DATA.plans.find(x=>x.id===id);
+  const note = $("#planPicked");
+  note.textContent = "✓ נתוני התשואה עודכנו למסלול " + p.name;
+  if(announce) note.classList.add("show");
+}
+
+/* מתגי מסלול במסך התשואה */
+function renderPlanSwitch(){
+  $("#planSwitch").innerHTML = DATA.plans.map(p =>
+    `<button data-plan="${p.id}" class="${p.id===selectedId?"active":""}">${p.name}${p.recommended?" ★":""}</button>`).join("");
+  $$("#planSwitch button").forEach(b => b.addEventListener("click", () => {
+    selectPlan(b.dataset.plan, false);
+    drawChartAnimated();
+  }));
+}
+
+/* ===================== טבלת השוואה ===================== */
+function renderCompare(){
+  const ps = DATA.plans;
+  const rows = ps.map(p => ({ p, s: seriesFor(p) }));
+  const cell = (fn) => rows.map(r => `<td>${fn(r)}</td>`).join("");
+  $("#cmpTable").innerHTML = `
+    <thead><tr><th>השוואה מהירה</th>${ps.map(p=>`<th>${p.name}${p.recommended?' <span class="star">★</span>':''}</th>`).join("")}</tr></thead>
+    <tbody>
+      <tr><td>הספק מותקן</td>${cell(r=>`<span class="num">${r.p.size}</span>`)}</tr>
+      <tr><td>פאנלים</td>${cell(r=>r.p.panels)}</tr>
+      <tr><td>צפי הכנסה — שנה ראשונה</td>${cell(r=>`<span class="num">${money(r.p.year1)}</span>`)}</tr>
+      <tr><td>צפי מצטבר ל־25 שנים</td>${cell(r=>`<span class="num">${money(r.s[r.s.length-1].cum)}</span>`)}</tr>
+      <tr><td>החזר השקעה מוערך</td>${cell(r=>`<span class="num">${roiFor(r.p,r.s).toFixed(1)}</span> שנים`)}</tr>
+      <tr><td>גימור אדריכלי ומסתור ממירים</td>${cell(()=>"✓ כלול")}</tr>
+      <tr><td>הכנת תשתית מלאה לאגירה</td>${cell(r=>r.p.storageReady?"✓ כלולה":"—")}</tr>
+      <tr><td>מחיר כולל מע״מ</td>${cell(r=>`<b class="num">${money(r.p.price)}</b>`)}</tr>
+    </tbody>`;
+  const base = ps[0], rc = ps.find(x=>x.recommended);
+  if(base && rc && base !== rc){
+    const sBase = seriesFor(base), sRec = seriesFor(rc);
+    const dPrice = rc.price - base.price;
+    const dY1 = rc.year1 - base.year1;
+    const dTotal = sRec[sRec.length-1].cum - sBase[sBase.length-1].cum;
+    if(dPrice > 0 && dY1 > 0){
+      $("#cmpNote").innerHTML = `ההפרש בין מסלול ${base.name} למסלול ${rc.name}: <b class="num">${money(dPrice)}</b> — ותוספת של כ־<b class="num">${money(dY1)}</b> הכנסה כבר בשנה הראשונה, וכ־<b class="num">${money(Math.round(dTotal/1000)*1000)}</b> על פני 25 שנים.`;
+    }
+  }
+}
+
+/* ===================== אזור כספים ===================== */
+function renderFinance(){
+  const p = DATA.plans.find(x=>x.id===selectedId);
+  const rows = seriesFor(p);
+  const roi = roiFor(p, rows);
+  const total = rows[rows.length-1].cum;
+  $("#fPrice").textContent = money(p.price);
+  const pre = p.price / (1 + DATA.vatPct/100);
+  $("#fPriceSub").textContent = "מסלול " + p.name + " · " + p.size + " · לפני מע״מ: " + money(pre) + " + מע״מ " + DATA.vatPct + "%: " + money(p.price - pre);
+  $("#fYear1").textContent = money(p.year1);
+  $("#fMonthly").textContent = Math.round(p.year1/12).toLocaleString("en-US");
+  $("#fYield").textContent = (p.year1/p.price*100).toFixed(1);
+  $("#fRoi").textContent = roi.toFixed(1) + " שנים";
+  $("#fTotal").textContent = money(total);
+  $("#fMultiple").textContent = (total/p.price).toFixed(1);
+  $("#chartPlanName").textContent = "מסלול " + p.name;
+  drawChart(p, rows, roi);
+  renderYears(p, rows);
+  applySelection();
+}
+
+function drawChart(plan, rows, roi){
+  const svg = $("#chart");
+  const W=860,H=380,padR=70,padL=24,padT=24,padB=44;
+  const iw = W-padR-padL, ih = H-padT-padB;
+  const maxY = Math.max(rows[rows.length-1].cum, plan.price)*1.08;
+  const x = y => padL + (y/DATA.years)*iw;
+  const yy = v => padT + ih - (v/maxY)*ih;
+  let line = `M ${x(0)} ${yy(0)}`;
+  rows.forEach(r => line += ` L ${x(r.year)} ${yy(r.cum)}`);
+  const area = line + ` L ${x(DATA.years)} ${yy(0)} Z`;
+  const gridLines = [];
+  for(let i=1;i<=4;i++){
+    const v = maxY*i/4;
+    gridLines.push(`<line x1="${padL}" y1="${yy(v)}" x2="${W-padR+40}" y2="${yy(v)}" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+    <text x="${W-padR+44}" y="${yy(v)+4}" fill="#7E92AF" font-size="13" text-anchor="start">${Math.round(v/1000)}K</text>`);
+  }
+  const ticks = [];
+  for(let t=0;t<=DATA.years;t+=5){
+    ticks.push(`<text x="${x(t)}" y="${H-14}" fill="#7E92AF" font-size="13" text-anchor="middle">${t===0?"היום":"שנה "+t}</text>`);
+  }
+  svg.innerHTML = `
+    <defs>
+      <linearGradient id="ag" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#F0A72B" stop-opacity=".45"/>
+        <stop offset="100%" stop-color="#F0A72B" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    ${gridLines.join("")}
+    <path id="chartArea" d="${area}" fill="url(#ag)"/>
+    <path id="chartLine" d="${line}" fill="none" stroke="#F0A72B" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="${padL}" y1="${yy(plan.price)}" x2="${W-padR+40}" y2="${yy(plan.price)}" stroke="#4ED98F" stroke-width="2" stroke-dasharray="7 6"/>
+    <text x="${padL+4}" y="${yy(plan.price)-8}" fill="#4ED98F" font-size="13" font-weight="700" text-anchor="start">עלות המערכת · ${money(plan.price)}</text>
+    <line x1="${x(roi)}" y1="${yy(0)}" x2="${x(roi)}" y2="${yy(plan.price)}" stroke="#4ED98F" stroke-width="1.5" stroke-dasharray="3 4"/>
+    <circle cx="${x(roi)}" cy="${yy(plan.price)}" r="7" fill="#4ED98F" stroke="#0A1B33" stroke-width="2.5"/>
+    <text x="${x(roi)}" y="${yy(plan.price)+26}" fill="#4ED98F" font-size="13" font-weight="700" text-anchor="middle">נקודת האיזון · ${roi.toFixed(1)} שנים</text>
+    ${ticks.join("")}
+    <rect id="chartHit" x="${padL}" y="${padT}" width="${iw}" height="${ih}" fill="transparent"/>
+    <circle id="hoverDot" r="6" fill="#fff" stroke="#F0A72B" stroke-width="3" style="display:none"/>
+  `;
+  const hit = svg.querySelector("#chartHit");
+  const dot = svg.querySelector("#hoverDot");
+  const tip = $("#chartTip");
+  const card = svg.closest(".chart-card");
+  function onMove(ev){
+    const pt = svg.createSVGPoint();
+    const e = ev.touches ? ev.touches[0] : ev;
+    pt.x = e.clientX; pt.y = e.clientY;
+    const sp = pt.matrixTransform(svg.getScreenCTM().inverse());
+    let yr = Math.round(((sp.x - padL)/iw)*DATA.years);
+    yr = Math.max(1, Math.min(DATA.years, yr));
+    const r = rows[yr-1];
+    dot.style.display = "block";
+    dot.setAttribute("cx", x(yr)); dot.setAttribute("cy", yy(r.cum));
+    const cardRect = card.getBoundingClientRect();
+    const svgRect = svg.getBoundingClientRect();
+    const px = svgRect.left - cardRect.left + (x(yr)/W)*svgRect.width;
+    const py = svgRect.top - cardRect.top + (yy(r.cum)/H)*svgRect.height;
+    tip.style.left = px + "px"; tip.style.top = py + "px"; tip.style.opacity = 1;
+    tip.innerHTML = `שנה ${yr} · מצטבר: <span class="num">${money(r.cum)}</span>`;
+  }
+  const hide = () => { tip.style.opacity = 0; dot.style.display = "none"; };
+  hit.addEventListener("mousemove", onMove);
+  hit.addEventListener("touchstart", onMove, {passive:true});
+  hit.addEventListener("touchmove", onMove, {passive:true});
+  hit.addEventListener("mouseleave", hide);
+  hit.addEventListener("touchend", hide);
+  hit.addEventListener("touchcancel", hide);
+}
+
+function drawChartAnimated(){
+  if(reduced || !window.gsap) return;
+  const line = $("#chartLine"), area = $("#chartArea");
+  if(!line) return;
+  const len = line.getTotalLength();
+  gsap.set(line, {strokeDasharray:len, strokeDashoffset:len});
+  gsap.to(line, {strokeDashoffset:0, duration:1.4, ease:"power2.out"});
+  gsap.fromTo(area, {autoAlpha:0}, {autoAlpha:1, duration:1.1, delay:.5, ease:"power1.out"});
+}
+
+function renderYears(plan, rows){
+  const roiYear = Math.ceil(roiFor(plan, rows));
+  const kwh = y => Math.round(plan.kwh1 * Math.pow(1 - DATA.degradationPct/100, y-1));
+  $("#yearsTable").innerHTML = `
+    <thead><tr><th>שנה</th><th>צפי ייצור (קוט״ש)</th><th>צפי הכנסה שנתית</th><th>צפי הכנסה מצטברת</th></tr></thead>
+    <tbody>${rows.map(r => `
+      <tr class="${r.year===roiYear?"be":""}">
+        <td class="num">${r.year}</td>
+        <td class="num">${kwh(r.year).toLocaleString("en-US")}</td>
+        <td class="num">${money(r.income)}</td>
+        <td class="num">${money(r.cum)}${r.year===roiYear?" · המערכת החזירה את עצמה ✓":""}</td>
+      </tr>`).join("")}
+    </tbody>`;
+}
+$("#tblBtn").addEventListener("click", () => {
+  const w = $("#yearsWrap");
+  w.classList.toggle("open");
+  $("#tblBtn").textContent = w.classList.contains("open") ? "הסתרת הטבלה המלאה" : "הצגת טבלת ההכנסות המלאה — 25 שנים";
+});
+
+/* ===================== תהליך ===================== */
+(function renderProcess(){
+  $("#timeline").innerHTML = DATA.process.map((s,i)=>`
+    <div class="step ${i===0?"open":""}" data-anim>
+      <div class="step-dot">${i+1}</div>
+      <div class="step-card">
+        <button class="step-head" type="button" aria-expanded="${i===0}">
+          <div><h3>${s.name}</h3><div class="who">${s.who}</div></div>
+          <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="step-body"><ul>${s.items.map(it=>`<li>${it}</li>`).join("")}</ul></div>
+      </div>
+    </div>`).join("");
+  $$(".step .step-head").forEach(h => h.addEventListener("click", () => {
+    const step = h.closest(".step");
+    step.classList.toggle("open");
+    h.setAttribute("aria-expanded", String(step.classList.contains("open")));
+  }));
+})();
+
+/* ===================== שאלות ===================== */
+(function renderFaq(){
+  $("#faqList").innerHTML = DATA.faq.map(f=>`
+    <div class="faq" data-anim>
+      <button class="faq-q" type="button">
+        <span>${f.q}</span>
+        <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><p>${f.a}</p></div>
+    </div>`).join("");
+  $$(".faq-q").forEach(b => b.addEventListener("click", () => b.closest(".faq").classList.toggle("open")));
+})();
+
+/* ===================== מפרט — טאבים ===================== */
+$$(".spec-tab").forEach(t => t.addEventListener("click", () => {
+  $$(".spec-tab").forEach(x => x.classList.remove("active"));
+  $$(".spec-panel").forEach(x => x.classList.remove("active"));
+  t.classList.add("active");
+  const panel = document.getElementById(t.dataset.panel);
+  panel.classList.add("active");
+  panel.querySelectorAll("[data-anim]").forEach(el => el.classList.add("shown"));
+  if(!reduced && window.gsap){
+    gsap.fromTo(panel, {autoAlpha:0, y:14}, {autoAlpha:1, y:0, duration:.4, ease:"power2.out", clearProps:"transform"});
+  }
+}));
+
+/* ===================== אתחול ===================== */
+buildNav();
+renderPlans();
+renderPlanSwitch();
+renderCompare();
+renderFinance();
+const startId = (location.hash || "#home").slice(1);
+if(startId !== "home" && SCREENS.some(s=>s.id===startId)){
+  goTo(startId, false);
+} else {
+  setActiveNav();
+  animateScreenIn(document.querySelector('[data-screen="home"]'));
+  runCounters();
+}
+window.addEventListener("hashchange", () => {
+  const id = (location.hash || "#home").slice(1);
+  if(id !== currentScreen) goTo(id, false);
+});
+window.addEventListener("popstate", () => {
+  const id = (location.hash || "#home").slice(1);
+  if(id !== currentScreen) goTo(id, false);
+});
+</script>
+</body>
+</html>
